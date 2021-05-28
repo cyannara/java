@@ -1,7 +1,10 @@
 package co.yedam.numgame;
-
+/*
+ * 숫자맞추기 게임
+ * 작성자 : 김유미
+ */
 public class NumberGameApp {
-	//컴 임의의 수
+
 	int com;     //컴퓨터 만든 수 
 	int user;    //사용자가 입력한 값
 	
