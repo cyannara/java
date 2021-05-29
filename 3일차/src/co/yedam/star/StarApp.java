@@ -19,15 +19,15 @@ public class StarApp {
 	//이등변삼각형
 	void drawEq(int cnt) {
 		for(int i=1; i<=cnt; i++) {
-			System.out.print(pad(' ', ___ )); //공백
-			System.out.println(pad('*', ___  ));
+			System.out.print(pad(' ', i )); //공백
+			System.out.println(pad('*', i  ));
 		}
 	}
 	//이등변 역삼각형
 	void drawEqInvert(int cnt) {
 		for(int i=1; i<=cnt; i++) {
-			System.out.print(pad(' ', ___ )); //공백
-			System.out.println(pad('*', ___  ));
+			System.out.print(pad(' ',i )); //공백
+			System.out.println(pad('*', i ));
 		}
 	}
 	

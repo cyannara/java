@@ -11,7 +11,7 @@ public class FieldTest {
 	public static void main(String[] args) {
 		FieldTest fieldTest = new FieldTest();
 		fieldTest.method1();
-		System.out.println(fieldTest.a);
+		//System.out.println(fieldTest.a);
 	}
 	
 }
