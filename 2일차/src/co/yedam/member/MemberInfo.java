@@ -1,4 +1,4 @@
-package co.yedam.app;
+package co.yedam.member;
 
 import java.util.Scanner;
 
@@ -23,6 +23,7 @@ public class MemberInfo {
 		weight = scanner.nextDouble();
 
 	}
+	
 	String bmi() {
 
 		result = weight / (height/100*height/100);
@@ -37,6 +38,7 @@ public class MemberInfo {
 		
 		return s;
 	}
+	
 	void input() {
 		// 코드 작성
 		System.out.print("1. 이름:");
@@ -46,6 +48,7 @@ public class MemberInfo {
 		System.out.print("3. 전화번호:");
 		tel = scanner.next();
 	}	
+	
 	void print() {
 		System.out.println("[입력한 내용]");
 		System.out.println(name);

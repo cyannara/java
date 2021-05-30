@@ -1,16 +1,14 @@
 package co.yedam.app;
 
-import java.util.Scanner;
-
 public class AppMain {
 
 	public static void main(String[] args) {
 
-		CalcGame game = 
-				new CalcGame();
+		CalcApp calc = new CalcApp();
 		
-		System.out.println(game.sum(10));
-		System.out.println(game.sum(100));
+		System.out.println(calc.sum(10));
+		System.out.println(calc.sum(100));
+		
 //		game.input();
 //		
 //		System.out.println( game.add() );
