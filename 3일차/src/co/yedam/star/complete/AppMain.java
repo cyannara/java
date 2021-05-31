@@ -1,4 +1,4 @@
-package co.yedam.star3;
+package co.yedam.star.complete;
 
 public class AppMain {
 
@@ -9,22 +9,22 @@ public class AppMain {
 		star.drawUp(10,'$');
 		
 		System.out.println("============================================");
-		System.out.println("»ï°¢Çü");
+		System.out.println("ì‚¼ê°í˜•");
 		System.out.println("============================================");
 		star.draw(10,'@');
 		
 		System.out.println(star.pad('=', 100));
-		System.out.println("»ï°¢Çü ¿À¸¥ÂÊ");	
+		System.out.println("ì‚¼ê°í˜• ì˜¤ë¥¸ìª½");	
 		System.out.println(star.pad('=', 100));
 		star.drawRight(10,'@');
 		
-		star.drawTitle("¿ª»ï°¢Çü ¿ŞÂÊ",100);
+		star.drawTitle("ì—­ì‚¼ê°í˜• ì™¼ìª½",100);
 		star.drawInvert(10,'#');
 		
-		star.drawTitle("¿ª»ï°¢Çü ¿À¸¥ÂÊ",100);
+		star.drawTitle("ì—­ì‚¼ê°í˜• ì˜¤ë¥¸ìª½",100);
 		star.drawInvertRight(10,'#');
 		
-		star.drawTitle("³ª¹«",100);
+		star.drawTitle("ë‚˜ë¬´",100);
 		star.drawEq(4);
 		star.drawEq(2,6);
 		star.drawEq(4,8);

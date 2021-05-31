@@ -1,4 +1,4 @@
-package co.yedam.star3;
+package co.yedam.star.complete;
 
 
 public class StarApp {
@@ -21,7 +21,7 @@ public class StarApp {
 			System.out.println(pad(' ', cnt-i) + pad(shape,i));
 		}
 	}	
-	//default �Ű������� �����Ƿ� �����ε����� �ذ�
+	//default 매개변수가 없으므로 오버로딩으로 해결
 	void drawUp(int cnt) {
 		drawUp(cnt, shapeDefault);
 	}
@@ -67,7 +67,7 @@ public class StarApp {
 	
 
 	/*
-	���ﰢ�� ������
+	역삼각형 오른쪽
 	 ####  
 	  ###
 	   ##
@@ -81,7 +81,7 @@ public class StarApp {
 	
 
 	/*
-	���ﰢ�� ����
+	역삼각형 왼쪽
 	 ####  
 	 ###
 	 ##
@@ -100,7 +100,7 @@ public class StarApp {
 	}
 
 	/*
-	�̵�ﰢ��(1���� ����) .ù��° �����ġ�� 50��°ĭ���� ���
+	이등변삼각형(1부터 시작) .첫번째 출력위치가 50번째칸에서 출력
 	                 #
 	                ###
 	               #####
@@ -113,7 +113,7 @@ public class StarApp {
 	}
 	
 	/*
-	�̵�ﰢ�� (���۰����� ����)
+	이등변삼각형 (시작갯수를 지정)
 	                ###
 	               #####
 	              #######  
@@ -125,7 +125,7 @@ public class StarApp {
 	}
 	
 	/*
-    �̵���ﰢ��
+    이등변역삼각형
 	             #######  
 	              #####
 	               ###
@@ -137,7 +137,7 @@ public class StarApp {
 		}
 	}
 	
-	//�������
+	//나무기둥
 	void drawRect(int cnt) {
 		for(int i=1; i<cnt; i++) {
 			System.out.println(pad(' ', 48) + pad('x',3));

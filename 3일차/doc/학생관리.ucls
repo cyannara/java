@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="co.yedam.score.ArrayApp" project="3일차" 
-    file="/3일차/src/co/yedam/score/ArrayApp.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="co.yedam.test.ArrayApp" project="3일차" file="/3일차/src/co/yedam/test/ArrayApp.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
     <position height="183" width="102" x="221" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
