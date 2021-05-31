@@ -8,15 +8,15 @@ public class MemberService {
 	Scanner scanner  = new Scanner(System.in);
 	//회원가입
 	void insert(String id, String password, String name, int age) {
-	//	members[cnt] = new Member(id,password, name, age);
-	//	cnt++;
+		members[cnt] = new Member(id,password, name, age);
+		cnt++;
 	}
 	void insert() {
 		String id = scanner.next();
 		String password = scanner.next();
 		String name =scanner.next();
 		int age = scanner.nextInt();
-		members[cnt] = new Member(id,password, name, age);
+		members[cnt] = new Member(id,name, password, age);
 		cnt++;
 	}
 	//회원리스트

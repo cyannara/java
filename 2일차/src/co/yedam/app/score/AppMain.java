@@ -6,8 +6,8 @@ public class AppMain {
 		//성적입력
 		score.input();
 		
-		score.avg = 100;
-		score.setAvg(100);
+		//score.avg = 100;
+		//score.setAvg(100);
 		
 		//결과출력
 		System.out.println( 

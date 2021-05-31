@@ -2,8 +2,6 @@ package co.yedam.member;
 
 import java.util.Scanner;
 
-import co.yedam.test.Exam06;
-
 public class MemberServiceExample {
 	public static void main(String[] args) {
 

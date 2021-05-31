@@ -2,7 +2,6 @@ package co.yedam.emp;
 
 import java.util.Scanner;
 
-import co.yedam.test.Exam06;
 
 public class EmployeeAppMain {
 public static void main(String[] args) {
