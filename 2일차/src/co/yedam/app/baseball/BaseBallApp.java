@@ -46,7 +46,7 @@ public class BaseBallApp {
 		System.out.println("s:" + s + "  b:"+b);
 	}
 	
-	void start() {
+	public void start() {
 		makeRnd();
 		while(true ) {
 			input();

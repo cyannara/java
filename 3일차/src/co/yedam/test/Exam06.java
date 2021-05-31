@@ -27,7 +27,6 @@ public class Exam06 {
 		for(int i=0; i<scores.length; i++) {
 			System.out.printf("scroe[%d] %d\n" ,i, scores[i]);
 		}
-		System.out.println();
 	}
 	
 	void avg() {

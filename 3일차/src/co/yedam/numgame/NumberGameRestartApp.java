@@ -23,7 +23,7 @@ public class NumberGameRestartApp {
 		user = scanner.nextInt();
 		
 	}	
-	//사용자 수를 입력
+	//게임재시작여부 확인
 	boolean confirmStart() {
 		//scanner 를 이용해서 정수값 입력
 		System.out.println("게임을 시작할까요?(y/n)");
@@ -31,7 +31,7 @@ public class NumberGameRestartApp {
 		if (re == 'Y'  || re == 'y' ) {  //y이면
 			return true;
 		} else {
-			System.out.println("buy!!!! ");
+			System.out.println("bye!!!! ");
 			return false;
 		}
 	}	
