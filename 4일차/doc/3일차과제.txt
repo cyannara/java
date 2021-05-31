@@ -1,0 +1,30 @@
+1. StarApp :나무출력
+		star.drawTitle("나무",100);
+		star.drawEq(4);
+		star.drawEq(2,6);
+		star.drawEq(4,8);
+		star.drawRect(4);
+
+====================================================================================================
+나무
+====================================================================================================
+                                                  
+                                                 x
+                                                xxx
+                                               xxxxx
+                                                xxx
+                                               xxxxx
+                                              xxxxxxx
+                                             xxxxxxxxx
+                                              xxxxxxx
+                                             xxxxxxxxx
+                                            xxxxxxxxxxx
+                                           xxxxxxxxxxxxx
+                                                xxx
+                                                xxx
+                                                xxx
+
+
+
+2. 야구게임
+3. 숫자맞추기게임(NumberGameApp)
