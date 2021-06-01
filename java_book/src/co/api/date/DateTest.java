@@ -1,4 +1,4 @@
-package 날짜;
+package co.api.date;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -8,13 +8,19 @@ import java.util.Date;
 public class DateTest {
 
 	public static void main(String[] args) {
-		// String, Int, date
+		
+		// Date
 		Date today = new Date();
 		System.out.println(today);
 		
 		//날짜 format
+		//Date  --> String 
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-		System.out.println(df.format(today));
+		String strToday = df.format(today);
+		System.out.println(strToday);
+		
+		//String --> Date
+		
 		
 		//Calendar
 		Calendar c = Calendar.getInstance();
@@ -23,7 +29,10 @@ public class DateTest {
 		System.out.println("day=" + c.get(Calendar.DAY_OF_MONTH));
 		System.out.println("month=" + ( c.get(Calendar.MONTH) + 1) );
 		
-		//남은 일수 계산
+		//날짜 계산
+		
+		
+		//현재날짜와 시간 조회
 		
 	}
 

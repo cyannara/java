@@ -1,4 +1,4 @@
-package wrapper;
+package co.api.wrapper;
 
 public class DoubleTest {
 

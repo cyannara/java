@@ -1,4 +1,4 @@
-package 날짜;
+package co.api.date;
 
 import java.time.LocalDate;
 import java.time.Period;

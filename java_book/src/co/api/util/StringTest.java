@@ -1,4 +1,4 @@
-package util;
+package co.api.util;
 /** 
  * 문자열 조작 
  * @author user
