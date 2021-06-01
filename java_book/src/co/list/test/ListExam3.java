@@ -1,10 +1,10 @@
-package collections.test;
+package co.list.test;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class 문제2 {
+public class ListExam3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

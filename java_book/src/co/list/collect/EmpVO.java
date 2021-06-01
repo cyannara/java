@@ -1,4 +1,4 @@
-package collectionTest;
+package co.list.collect;
 
 public class EmpVO {
 	private String employee_id;

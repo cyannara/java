@@ -1,4 +1,4 @@
-package collections;
+package co.list.base;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import java.util.Iterator;
  * @author user
  * List 의 요소 타입이 객체인 경우(사원정보)
  */
-public class ListEmployeeTest {
+public class ListEmpTest {
 	public static void main(String[] args) {
 		ArrayList<Employees> list = new ArrayList<Employees>();
 		list.add(new Employees("100","길동","홍","2000"));

@@ -1,4 +1,4 @@
-package collections.test;
+package co.list.test;
 
 import java.awt.Point;
 import java.util.ArrayList;

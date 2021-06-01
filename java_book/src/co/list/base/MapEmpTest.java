@@ -1,4 +1,4 @@
-package collections;
+package co.list.base;
 
 import java.util.HashMap;
 import java.util.Set;
@@ -7,7 +7,7 @@ import java.util.Set;
  * (Emp)객체를 저장하는 Map 구조 
  *
  */
-public class MapClassTest {
+public class MapEmpTest {
 
 	public static void main(String[] args) {
 

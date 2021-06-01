@@ -1,4 +1,4 @@
-package collections;
+package co.list.base;
 
 import java.util.HashSet;
 import java.util.Iterator;

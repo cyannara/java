@@ -1,4 +1,4 @@
-package collections;
+package co.list.collect;
 
 /**
  * 정렬하기 
@@ -13,6 +13,9 @@ package collections;
  */
 import java.util.Collections;
 import java.util.Comparator;
+
+import co.list.base.Employees;
+
 import java.util.ArrayList;
 
 /**
@@ -20,7 +23,7 @@ import java.util.ArrayList;
  * @author user
  *
  */
-public class ListOrderEmployee {
+public class SortEmployee {
 
 	public static void main(String[] args) {
 		

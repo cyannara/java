@@ -1,15 +1,19 @@
-package collectionTest;
+package co.list.collect;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * 리스트 정렬
+ */
 class EmpComp implements Comparator<EmpVO>{
 	public int compare(EmpVO o1, EmpVO o2) {
 		return o1.getFirst_name().compareTo(o2.getFirst_name());
 	}
 }
+
 //급여순으로 비교
 class  EmpSalComp implements Comparator<EmpVO>{
 	public int compare(EmpVO o1, EmpVO o2) {
