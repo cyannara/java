@@ -1,4 +1,4 @@
-package dept;
+package jdbc.dept;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import common.DAO;
+import jdbc.common.DAO;
 
 public class DeptDAO extends DAO {
 	Connection conn;

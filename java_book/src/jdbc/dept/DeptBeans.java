@@ -1,4 +1,4 @@
-package dept;
+package jdbc.dept;
 
 public class DeptBeans {
 	private String locationId;

@@ -1,11 +1,11 @@
 package innerClass;
 
 /**
- * inner/¸É¹ö Å¬·¡½º
- *  : Å¬·¡½ºÀÇ Á¤ÀÇ¸¦ °¨Ãß¾î¾ß ÇÒ ¶§ »ç¿ë 
- *  : ÀÎ½ºÅÏ½º º¯¼ö¿Í µ¿ÀÏÇÑ À§Ä¡¿¡ Á¤ÀÇ
- *  : outer Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º º¯¼ö¿¡ Á¢±ÙÀÌ °¡´ÉÇÔ.
- *  : outer ÀÎ½ºÅÏ½º »ı¼º ¾øÀÌ inner ÀÎ½ºÅÏ½º »ı¼º ºÒ°¡´É
+ * inner/ë§´ë²„ í´ë˜ìŠ¤
+ *  : í´ë˜ìŠ¤ì˜ ì •ì˜ë¥¼ ê°ì¶”ì–´ì•¼ í•  ë•Œ ì‚¬ìš© 
+ *  : ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì™€ ë™ì¼í•œ ìœ„ì¹˜ì— ì •ì˜
+ *  : outer í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì— ì ‘ê·¼ì´ ê°€ëŠ¥í•¨.
+ *  : outer ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ì—†ì´ inner ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ë¶ˆê°€ëŠ¥
  *
  */
 class Emp {
@@ -39,7 +39,7 @@ class Emp {
 class MemberClassTest {
 	public static void main(String[] args) {
 		Emp emp = new Emp("100","scott");
-		Emp.Dept dept = emp.new Dept("10","ÀÎ»ç");
+		Emp.Dept dept = emp.new Dept("10","ì¸ì‚¬");
 		System.out.println(dept.toString());
 	}
 }

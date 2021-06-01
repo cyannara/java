@@ -7,8 +7,8 @@ import java.util.Iterator;
 
 import javax.swing.*;
 
-import dept.Dept;
-import dept.DeptDAO;
+import jdbc.dept.Dept;
+import jdbc.dept.DeptDAO;
 
 public class DeptSwing extends JFrame implements ActionListener{
 	

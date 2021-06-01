@@ -1,4 +1,4 @@
-package dept;
+package jdbc.dept;
 public class DeptSearchVO extends DeptVO {
 	Integer start;
 	Integer end;	

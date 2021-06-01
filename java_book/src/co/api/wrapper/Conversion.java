@@ -1,15 +1,15 @@
-package test;
+package co.api.wrapper;
 /**
- * µ¥ÀÌÅÍº¯È¯ Å×½ºÆ®
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½È¯ ï¿½×½ï¿½Æ®
  * @author user
- * ÀÛ¼ºÀÏÀÚ : 2017/04/12
+ * ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ : 2017/04/12
  */
 public class Conversion {
 
 	/**
-	 * ½ÃÀÛ¸Þ¼­µå
-	 * @param args : ¸í·ÉÇàÀÎ¼ö
-	 * @return : ¾øÀ½
+	 * ï¿½ï¿½ï¿½Û¸Þ¼ï¿½ï¿½ï¿½
+	 * @param args : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¼ï¿½
+	 * @return : ï¿½ï¿½ï¿½ï¿½
 	 */
 	public static void main(String[] args) {
 		String s = "100";

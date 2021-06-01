@@ -1,11 +1,11 @@
-package test;
+package co.api.date;
 
 import java.util.Date;
 
 /**
- * ½ºÆ®¸µ°ú ³¯Â¥ Å¸ÀÔ º¯È¯
- * 1. simpleDateFormat ÀÌ¿ë
- * 2. Date ¶Ç´Â Calendar ÀÌ¿ë
+ * ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ Å¸ï¿½ï¿½ ï¿½ï¿½È¯
+ * 1. simpleDateFormat ï¿½Ì¿ï¿½
+ * 2. Date ï¿½Ç´ï¿½ Calendar ï¿½Ì¿ï¿½
  * @author user
  *
  */

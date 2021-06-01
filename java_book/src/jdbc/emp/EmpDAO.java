@@ -1,4 +1,4 @@
-package emp;
+package jdbc.emp;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import common.DAO;
+import jdbc.common.DAO;
 
 public class EmpDAO extends DAO{
 

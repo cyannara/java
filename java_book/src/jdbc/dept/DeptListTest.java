@@ -1,4 +1,4 @@
-package dept;
+package jdbc.dept;
 
 import java.util.ArrayList;
 import java.util.Iterator;

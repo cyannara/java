@@ -1,4 +1,4 @@
-package test;
+package 제어문;
 
 public class ForInTest {
 

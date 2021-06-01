@@ -1,4 +1,4 @@
-package emp;
+package jdbc.emp;
 
 public class EmpBeans {
 	private String departmentId;

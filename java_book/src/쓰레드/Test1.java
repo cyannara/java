@@ -1,4 +1,4 @@
-package yedam.test;
+package 쓰레드;
 
 public class Test1 {
 
