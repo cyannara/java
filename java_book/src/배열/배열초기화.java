@@ -1,15 +1,17 @@
 package 배열;
-/*
 
- */
 import java.awt.Point;
 
+/*
+ * 배열 : 크기고정
+ * 순차적으로 데이터를 저장하고 읽는 용도
+ * 추가/삭제 번거로움
+ */
 public class 배열초기화 {
 	public static void main(String[] args) {
 		
 		//1차원배열
-		//정수형 배열
-		
+		//정수형 배열		
 		int[] i1 = {10,20,30};
 		
 		//문자열 배열
@@ -19,7 +21,9 @@ public class 배열초기화 {
 		String[] s1 = {"have a","nice","day"};
 		
 		//객체배열
-		Point[] p1 = {new Point(10,20), new Point(1,4), new Point(3,4)  };
+		Point[] p1 = {new Point(10,20), 
+				      new Point(1,4), 
+				      new Point(3,4)  };
 		
 		//2차원배열
 		//정수형 2차원 배열
@@ -30,5 +34,6 @@ public class 배열초기화 {
 		for(int i=0; i<((int[])o).length; i++) {
 			System.out.println(((int[])o)[i]);;
 		}
+		
 	}
 }

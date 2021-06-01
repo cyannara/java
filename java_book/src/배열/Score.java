@@ -7,6 +7,7 @@ public class Score {
 	int eng;
 	int total;
 	double avg;
+	
 	public Score(String name, int kor, int mat, int eng) {
 		super();
 		this.name = name;
@@ -15,6 +16,7 @@ public class Score {
 		this.eng = eng;
 		
 		this.total = kor + mat + eng;
+		this.avg = (double)this.total / 3;
 	}
 
 }
