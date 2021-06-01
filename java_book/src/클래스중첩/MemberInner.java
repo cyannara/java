@@ -1,4 +1,4 @@
-package ch26;
+package 클래스중첩;
 /**
  * inner class -> member class :필드 위치 정의된 클래스 
  *

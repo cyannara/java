@@ -1,4 +1,4 @@
-package ch25;
+package 메서드;
 /**
  * 가변인수 
  *

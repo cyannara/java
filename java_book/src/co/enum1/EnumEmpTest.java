@@ -1,10 +1,11 @@
-package ch25;
+package co.enum1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class EnumEmpTest {
 	public static void main(String[] args) {
+		
 		List<EmpVO> list = new ArrayList<EmpVO>();
 		list.add(new EmpVO("101",Gender.MALE));
 		list.add(new EmpVO("102",Gender.FEMALE));
@@ -18,6 +19,7 @@ public class EnumEmpTest {
 				cnt ++;
 			}
 		}
+		
 		System.out.println("남자:" + cnt);
 	}
 }

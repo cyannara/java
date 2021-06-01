@@ -1,4 +1,4 @@
-package ch26;
+package 클래스중첩;
 //인터페이스 구현 클래스를  정의 할 때 람다식 (추상메서드는 하나만 존재)
 
 interface Printable2 {

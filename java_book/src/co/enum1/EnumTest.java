@@ -1,4 +1,4 @@
-package ch25;
+package co.enum1;
 
 /*interface Scale {
 	//상수와 추상메서드

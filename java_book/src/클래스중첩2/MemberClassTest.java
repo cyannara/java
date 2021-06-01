@@ -1,4 +1,4 @@
-package innerClass;
+package 클래스중첩2;
 
 /**
  * inner/맴버 클래스
