@@ -1,9 +1,7 @@
 package 클래스;
 
 /** 
- * ����
  * @author user
- *
  */
 
 public class CalcTest {
