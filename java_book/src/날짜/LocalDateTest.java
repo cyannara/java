@@ -1,4 +1,4 @@
-package ch31;
+package 날짜;
 
 import java.time.LocalDate;
 import java.time.Period;

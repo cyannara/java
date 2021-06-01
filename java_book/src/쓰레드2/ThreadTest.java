@@ -1,4 +1,4 @@
-package ch34;
+package 쓰레드2;
 
 /*class Thread1 implements Runnable {
 	public void run() {

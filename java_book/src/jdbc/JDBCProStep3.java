@@ -1,7 +1,7 @@
 /*
  * 새롭게 추가된 내용 : 고객 이름으로 검색하기와 전체보기
  */
-package kame.ch23.ex2;
+package jdbc;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

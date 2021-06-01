@@ -6,12 +6,14 @@ public class RobotTest {
 		
 		//2. 객체생성
 		Robot r = new Robot(2,4);
-		System.out.println(r.getArm());
-		System.out.println(r.getLeg());
+		
+		//3. 객체사용
+		r.setArm(2);
+		r.leg = 4;
+		r.print();
 		
 		Robot r2 = new Robot(2,2);
-		//3. 객체사용 (메서드호출)
-		r2.print();
+		
 	
 	}
 }

@@ -1,4 +1,4 @@
-package ch34;
+package 쓰레드2;
 
 class Task1 extends Thread {
 	public void run() {

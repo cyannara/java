@@ -1,4 +1,4 @@
-package ch32;
+package io2;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

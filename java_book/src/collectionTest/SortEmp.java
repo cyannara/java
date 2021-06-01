@@ -17,7 +17,7 @@ class  EmpSalComp implements Comparator<EmpVO>{
 	}	
 }
 
-public class EmpSortTest {
+public class SortEmp {
 	public static void main(String[] args) {
 		List<EmpVO> list = new ArrayList<EmpVO>();
 		list.add(new EmpVO("101","길동","홍",2000));

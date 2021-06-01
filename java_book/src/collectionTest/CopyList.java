@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class CopyTest {
+public class CopyList {
 
 	public static void main(String[] args) {
 		
@@ -17,15 +17,20 @@ public class CopyTest {
 		System.out.println(dest);
 		
 		//copy 메서드
+		//원본의 요소 갯수만큼 복사본 리스트에도  생성
+		Collections.copy(dest, list); 
+		System.out.println(dest);
+	
+		//정렬
 		Collections.sort(list);
 		System.out.println("정렬: " + list);
+		//역순
 		Collections.reverse(list);
 		System.out.println("역순: " + list);
+		//섞기
 		Collections.shuffle(list);
 		System.out.println("섞기: " + list);
 			
-		//Collections.copy(dest, list); //원본의 요소 갯수만큼 복사본 리스트에도  생성
-		//System.out.println(dest);
 		
 	
 	}
