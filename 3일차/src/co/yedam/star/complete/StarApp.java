@@ -20,7 +20,7 @@ public class StarApp {
 		for(int i=1; i<cnt; i++) {
 			System.out.println(pad(' ', cnt-i) + pad(shape,i));
 		}
-	}	
+	}
 	//default 매개변수가 없으므로 오버로딩으로 해결
 	void drawUp(int cnt) {
 		drawUp(cnt, shapeDefault);

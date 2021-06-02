@@ -10,7 +10,14 @@ public class StarApp {
 			System.out.println(pad('#',i));
 		}
 	}
-	//역삼각형
+
+	/*
+	역삼각형 오른쪽
+	 ####  
+	  ###
+	   ##
+	    #
+	*/
 	void drawInvert(int cnt) {
 		for(int i=1; i<=cnt; i++) {
 			System.out.println(pad('#',cnt+1-i));

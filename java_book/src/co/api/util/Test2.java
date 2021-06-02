@@ -4,7 +4,7 @@ public class Test2 {
 
 	public static void main(String[] args) {
 
-		FileUtil.fileCopy("a.txt", "b.txt");
+		FileUtil2.fileCopy("a.txt", "b.txt");
 	}
 
 }

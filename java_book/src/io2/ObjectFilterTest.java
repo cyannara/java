@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import co.enum1.EmpVO;
+import base.enum1.EmpVO;
 
 /*
  * 인스턴스(객체) 읽고 쓰기
