@@ -1,0 +1,6 @@
+맴버 = 필드
+
+class   ___ {
+     int a;      인스턴스
+     static ;    스태틱(정적) = 클래스
+     static final : 상수
