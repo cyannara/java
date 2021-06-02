@@ -1,4 +1,4 @@
-package 상속2;
+package 도형;
 
 public class ShapeTest {
 
