@@ -1,4 +1,4 @@
-package co.micol.fly;
+package co.yedam.fly;
 
 public class AppMain {
 
