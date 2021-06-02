@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import common.ConnectionManager;
-import common.DAO;
+import jdbc.common.ConnectionManager;
+import jdbc.common.DAO;
 
 public class LocationsDAO extends DAO {
 	Connection conn;

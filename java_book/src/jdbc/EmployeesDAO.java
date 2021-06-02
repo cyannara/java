@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import common.ConnectionManager;
+import jdbc.common.ConnectionManager;
 
 /**
  * File : EmpDAO.java
