@@ -16,6 +16,15 @@ public class SchoolFriend extends  Friend {
 		this.birth = birth;
 	}
 
+	
+	public String getBirth() {
+		return birth;
+	}
+
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
+
 	@Override
 	public void print() {
 		//super.print();

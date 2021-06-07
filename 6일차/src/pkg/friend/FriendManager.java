@@ -27,19 +27,17 @@ public class FriendManager implements FriendAccess {
 	}
 
 	@Override
-	public void delete(Friend friend) {
+	public void delete(String name) {
 		// TODO Auto-generated method stub
 		
 	}
-
 	@Override
-	public List selectAll() {
-		System.out.println("FriendManager");
-		return null;
+	public void selectAll() {
+		// TODO Auto-generated method stub
+		
 	}
-
 	@Override
-	public Friend selectOne(Object key) {
+	public Friend selectOne(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}

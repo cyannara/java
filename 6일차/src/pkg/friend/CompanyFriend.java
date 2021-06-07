@@ -18,6 +18,14 @@ public class CompanyFriend extends Friend {
 		this.duty = duty;
 	}
 
+	public String getDuty() {
+		return duty;
+	}
+
+	public void setDuty(String duty) {
+		this.duty = duty;
+	}
+
 	@Override
 	public void print() {
 		//super.print();

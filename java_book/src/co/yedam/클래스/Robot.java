@@ -31,5 +31,16 @@ public class Robot {
 	public void print() {
 		System.out.printf("arm :%d leg:%d", arm,leg);
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Robot r2 =  ((Robot)obj);
+		return r2.arm == this.arm && r2.leg == this.leg;
+	}
+
+	@Override
+	public String toString() {
+		return "arm:" + arm + "leg:" + leg;
+	}
 }
 

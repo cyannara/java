@@ -15,4 +15,5 @@ public class Airplane implements Flyer {
 	public void land() {
 		System.out.println("Airplane 착륙 - 랜딩기어를 내리고 땅에 닿을 때까지 플랩을 낮추고 감속한다. 브레이크");
 	}
+	
 }
