@@ -1,12 +1,11 @@
 package day01;
 
 /*
- ÀÛ¼ºÀÚ : ±èÀ¯¹Ì
- ÀÛ¼ºÀÏÀÚ :
- ±â´É : 
+ ì‘ì„±ì : ê¹€ìœ ë¯¸
+ ê¸°ëŠ¥ : 
 */
 public class Hi {
-	// main ÇÔ¼ö=¸Ş¼­µå : ÇÁ·Î±×·¥ ½ÃÀÛÀ§Ä¡
+	// main í•¨ìˆ˜=ë©”ì„œë“œ : í”„ë¡œê·¸ë¨ ì‹œì‘ìœ„ì¹˜
 	public static void main(String[] args) {
 		System.out.println((int) (Math.random() * 100));
 		System.out.println((int) (Math.random() * 100));

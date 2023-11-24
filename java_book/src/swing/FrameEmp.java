@@ -4,8 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-import jdbc.EmployeesDAO;
 import jdbc.Employees;
+import jdbc.dept2.EmployeesDAO;
 
 public class FrameEmp extends JFrame implements ActionListener {
 

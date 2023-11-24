@@ -12,10 +12,7 @@ import java.util.Map;
 import jdbc.common.DAO;
 
 public class DeptDAO extends DAO {
-	Connection conn;
-	Statement stmt;
-	PreparedStatement pstmt;
-	ResultSet rs;
+
 	
 	//싱글톤 구현
 	public static DeptDAO instance = new DeptDAO();
@@ -28,7 +25,7 @@ public class DeptDAO extends DAO {
 		int r = 0;
 		try{
 			//1. connect
-			conn = connect();
+			connect();
 			String sql = "insert into departments (department_id, "
 					+ " department_name, location_id, manager_id ) "
 					+ " values( (select max(department_id)+10 from departments),"
