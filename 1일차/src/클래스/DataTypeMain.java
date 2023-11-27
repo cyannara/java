@@ -1,6 +1,6 @@
-package 데이터타입;
+package 클래스;
 
-class DataType {
+class DataBean {
 	boolean b;
 	char    c;
 	int     i;
@@ -8,14 +8,16 @@ class DataType {
 	String  s = "hi";
 }
 
-public class DataTypeTest {
+public class DataTypeMain {
 	public static void main(String[] args) {
+		
 		boolean  b = false;
 		char     c = 0;
 		int      i = 0;
 		double   d = 0;
 		String   s = "hi";		
-		DataType data = new DataType(); 
+		
+		DataBean data = new DataBean(); 
 		
 		System.out.println( "boolean: " + data.b + " \t " + b );
 		System.out.println( "char   : " + data.c + " \t " + c );

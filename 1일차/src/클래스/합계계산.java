@@ -1,6 +1,6 @@
-package 데이터타입;
+package 클래스;
 
-public class DataType {
+public class 합계계산 {
 	void sum(int a, int b) {
 		System.out.println(a+b);
 	}

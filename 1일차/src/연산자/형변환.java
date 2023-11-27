@@ -18,7 +18,7 @@ import java.util.Scanner;
  *         <----  
  * String.valueOf(   )       
  */
-public class CastTest {
+public class 형변환 {
 
 	public static void main(String[] args) {
 		//자동형변환

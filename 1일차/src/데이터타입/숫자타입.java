@@ -1,4 +1,20 @@
 package 데이터타입;
+/**
+ * date : 2017/10/16 
+ * @author kim yoomi
+ * @since jdk1.2
+ * @version 1.8
+ * 변수 테스트
+ * 1. 상수값도 데이터형이 있다.
+ * 정수형 상수 -int,   실수형 상수 - double
+ *         10L               10.456F
+ * 2. 정수형 최대값(표현범위)
+ *    실수형 유효자릿수     
+ * 3. 데이터형 :  boolean
+ *             char
+ *             byte, short, int, long
+ *             float, double            
+ */
 /*
  * 데이터형 연습
  *                200    200L    10.5F  10.5
@@ -9,10 +25,17 @@ package 데이터타입;
  *        char                                        문자
  * boolean                                            논리   
  */
-public class TypeTest {
+public class 숫자타입 {
 	public static void main(String[] args) {
-		//System.out.println(Integer.MAX_VALUE);
-		//System.out.println(Long.MAX_VALUE);
+		
+		//최대값, 오버플로우
+		int i = Integer.MAX_VALUE ;
+		System.out.println("정수형 최대값:" + i );
+		System.out.println("정수형 최대값 + 1:" + (i+2) );
+		
+		long l =Long.MAX_VALUE;   //Long
+		System.out.println("롱 정수형 최대값:" + l );
+		
 		long a = 2200000000L;    //
 		
 		float f = 0.123456789f;           //유효자릿수 7자리
@@ -36,19 +59,5 @@ public class TypeTest {
 		int b2 = 0b1111;			
 		System.out.println(b2);
 		
-		//char
-		System.out.println("========================");
-		char c1 = '가';
-		System.out.println((int)c1);          	  	 //10진수
-		System.out.println(Integer.toHexString(c1)); //16진수
-		char c2 = '\uac01';
-		int c3 = 44033;
-		System.out.println(c2);
-		System.out.println((char)c3);
-		
-		
-		
-				
-				
 	}
 }

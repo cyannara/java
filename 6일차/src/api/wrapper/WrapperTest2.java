@@ -1,10 +1,10 @@
-package 변수;
+package api.wrapper;
 /** 
  * 
  * @author user
- * wrapper �겢�옒�뒪
+ * wrapper 
  */
-public class WrapperTest {
+public class WrapperTest2 {
 
 	public static void main(String[] args) {
 
@@ -39,7 +39,7 @@ public class WrapperTest {
 		String g = "1111";
 		System.out.println("1111 �쓽 10吏꾩닔�뒗 : " +  Integer.parseInt(g, 2));
 		
-		g = "1F";  //16吏꾩닔
+		g = "1F";  //16진수
 	
 	}
 

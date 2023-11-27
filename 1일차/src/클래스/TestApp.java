@@ -1,8 +1,8 @@
-package 데이터타입;
+package 클래스;
 
 public class TestApp {
 	public static void main(String[] args) {
-		DataType dt = new DataType();
+		합계계산 dt = new 합계계산();
 		dt.sum(10, 20);
 		dt.suml(21000000000l, 20000000000l);
 //		dt.sumd(15.5, 16,5);
