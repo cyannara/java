@@ -1,4 +1,4 @@
-package co.yedam.member;
+package day01.입출력;
 
 public class MemberInfoMain {
 	public static void main(String[] args) {

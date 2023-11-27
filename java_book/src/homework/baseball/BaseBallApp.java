@@ -1,4 +1,4 @@
-package co.yedam.app.baseball;
+package homework.baseball;
 
 import java.util.Scanner;
 
