@@ -1,4 +1,4 @@
-package javalang;
+package homework.baseball;
 
 import java.util.Scanner;
 

@@ -13,8 +13,25 @@ public class BaseBallApp {
 	int b;
 	int c1,c2,c3;
 	int u1,u2,u3;
-	
 	Scanner scanner = new Scanner(System.in);
+	
+	
+	public void start() {
+		//숫자 3개 지정
+		makeRnd();
+		while(true ) {
+			//사용자가 숫자 3개 입력
+			userInput();
+			//스트라익 볼 갯수 카운트
+			strikeBallCount();
+			//스트라익이 3개면 게임종료
+			if(s == 3) {
+				System.out.println("게임종료");
+				break;
+			}
+		}
+	}
+	
 	
 	void makeRnd() {
 		c1=(int)(Math.random()*9)+1;
@@ -27,13 +44,14 @@ public class BaseBallApp {
 		System.out.println(c1 +":" + c2 +":" + c3);
 	}
 	
-	void input() { 
+	void userInput() { 
 		System.out.println("(1~9)입력:");
 		u1 = scanner.nextInt();
 		u2 = scanner.nextInt();
 		u3 = scanner.nextInt();
 	}
-	void count() {
+	
+	void strikeBallCount() {
 		s=0;
 		b=0;
 		// s, b 카운터
@@ -46,15 +64,5 @@ public class BaseBallApp {
 		System.out.println("s:" + s + "  b:"+b);
 	}
 	
-	public void start() {
-		makeRnd();
-		while(true ) {
-			input();
-			count();
-			if(s == 3) {
-				System.out.println("게임종료");
-				break;
-			}
-		}
-	}
+
 }
