@@ -1,61 +1,61 @@
-package º¯¼ö;
+package ë³€ìˆ˜;
 /**
  * date : 2017/10/16 
  * @author kim yoomi
  * @since jdk1.2
  * @version 1.8
- * º¯¼ö Å×½ºÆ®
- * 1. »ó¼ö°ªµµ µ¥ÀÌÅÍÇüÀÌ ÀÖ´Ù.
- * Á¤¼öÇü »ó¼ö -int,   ½Ç¼öÇü »ó¼ö - double
+ * ë³€ìˆ˜ í…ŒìŠ¤íŠ¸
+ * 1. ìƒìˆ˜ê°’ë„ ë°ì´í„°í˜•ì´ ìˆë‹¤.
+ * ì •ìˆ˜í˜• ìƒìˆ˜ -int,   ì‹¤ìˆ˜í˜• ìƒìˆ˜ - double
  *         10L               10.456F
- * 2. Á¤¼öÇü ÃÖ´ë°ª(Ç¥Çö¹üÀ§)
- *    ½Ç¼öÇü À¯È¿ÀÚ¸´¼ö     
- * 3. µ¥ÀÌÅÍÇü :  boolean
+ * 2. ì •ìˆ˜í˜• ìµœëŒ€ê°’(í‘œí˜„ë²”ìœ„)
+ *    ì‹¤ìˆ˜í˜• ìœ íš¨ìë¦¿ìˆ˜     
+ * 3. ë°ì´í„°í˜• :  boolean
  *             char
  *             byte, short, int, long
  *             float, double            
  */
 public class VarTest {
 	public static void main(String[] args) {
-		int i = Integer.MAX_VALUE ;		//Á¤¼öÇü »ó¼ö ±âº»Çü
+		int i = Integer.MAX_VALUE ;		//ì •ìˆ˜í˜• ìƒìˆ˜ ê¸°ë³¸í˜•
 		long a = 2200000000L;
 		float b = 10.12345678912345f;
-		double c = 10.12345678912345;  // ½Ç¼öÇü »ó¼ö ±âº»Çü
+		double c = 10.12345678912345;  // ì‹¤ìˆ˜í˜• ìƒìˆ˜ ê¸°ë³¸í˜•
 		
-		System.out.println("Á¤¼öÇü ÃÖ´ë°ª:" + i );
-		System.out.println("Á¤¼öÇü ÃÖ´ë°ª + 1:" + (i+2) );
+		System.out.println("ì •ìˆ˜í˜• ìµœëŒ€ê°’:" + i );
+		System.out.println("ì •ìˆ˜í˜• ìµœëŒ€ê°’ + 1:" + (i+2) );
 		
 		long d =Long.MAX_VALUE;   //Long
-		System.out.println("·Õ Á¤¼öÇü ÃÖ´ë°ª:" + d );
+		System.out.println("ë¡± ì •ìˆ˜í˜• ìµœëŒ€ê°’:" + d );
 		
 		System.out.println( "float " + b + " double " + c );
 		
-		//char Çü 
+		//char í˜• 
 		char e = 'A';
 		int f = 'A';    //65
-		char g = '°¡';
-		System.out.println("°¡ ÀÇ ÄÚµå°ª:" + (int)g);
+		char g = 'ê°€';
+		System.out.println("ê°€ ì˜ ì½”ë“œê°’:" + (int)g);
 		
 		g = '\uac01';
 		System.out.println("ac01: " + g);
 		
-		//10Áø¼ö¸¦ 16Áø¼ö·Î   toString( ,16)
+		//10ì§„ìˆ˜ë¥¼ 16ì§„ìˆ˜ë¡œ   toString( ,16)
 		System.out.println( Integer.toString(g,16) );
 		
-		//¾Æ½ºÅ°ÄÚµå Ãâ·Â
+		//ì•„ìŠ¤í‚¤ì½”ë“œ ì¶œë ¥
 		for ( int j = 1; j<127 ; j++ ) {
 		//	System.out.println( j + " : " + (char)j );	
 		}
 		
 		
-		//ÇÑ±Û Ãâ·Â
+		//í•œê¸€ ì¶œë ¥
 		for ( int j = 44032; j<45000 ; j++ ) {
 			System.out.println( j + " : " + (char)j );	
 		}
 		 
 	}
 	/**
-	 * ¼­ºê ¸Ş¼­µå
+	 * ì„œë¸Œ ë©”ì„œë“œ
 	 * 
 	 */
 	public static void sub1() {

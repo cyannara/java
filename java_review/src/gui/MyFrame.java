@@ -1,4 +1,4 @@
-package GUI;
+package gui;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -9,33 +9,41 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 public class MyFrame extends JFrame  {
-	//ÇÊµå
+	//í•„ë“œ
 	JTextField tf;
-	JButton btn;	
-	//»ı¼ºÀÚ -> ÄÄÆ÷³ÍÆ® ÃÊ±âÈ­ ¸Ş¼­µå È£Ãâ
+	JButton btn;
+	
+	//ìƒì„±ì -> ì»´í¬ë„ŒíŠ¸ ì´ˆê¸°í™” ë©”ì„œë“œ í˜¸ì¶œ
 	public MyFrame() {
 		init();
-	}	
-	//¸Ş¼­µå
+	}
+	
+	//ë©”ì„œë“œ
 	public void init() {
-		//ÇÁ·¹ÀÓ Á¤º¸ : Å¸ÀÌÆ², Ã¢ÀÇ Å©±â µî Ã¢ÀÇ ¼Ó¼ºÀ» ÁöÁ¤
-		this.setTitle("»ç¿ø°ü¸®");
+		//í”„ë ˆì„ ì •ë³´ : íƒ€ì´í‹€, ì°½ì˜ í¬ê¸° ë“± ì°½ì˜ ì†ì„±ì„ ì§€ì •
+		this.setTitle("ì‚¬ì›ê´€ë¦¬");
 		this.setBounds(200, 200, 300, 300);
 		this.setBackground(Color.LIGHT_GRAY);
 		this.setLayout(new GridLayout(2, 1, 50, 50));
 		
-		//ÄÄÆ÷³ÍÆ® »ı¼º
+		//ì»´í¬ë„ŒíŠ¸ ìƒì„±
 		tf = new JTextField();  
-		btn = new JButton();   //ÄÄÆ÷³ÍÆ® »ı¼º
-		btn.setText("ÀúÀå");     //ÄÄÆ÷³ÍÆ® ¼Ó¼º º¯°æ
-		                       //ÀÌº¥Æ® ÁöÁ¤
-        btn.addActionListener(new ActionListener() {			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				tf.setText("Å¬¸¯µÊ.");				
-			}
+		btn = new JButton();   //ì»´í¬ë„ŒíŠ¸ ìƒì„±
+		btn.setText("ì €ì¥");     //ì»´í¬ë„ŒíŠ¸ ì†ì„± ë³€ê²½
+		                       //ì´ë²¤íŠ¸ ì§€ì •
+		//ëŒë‹¤ì‹ : ë©”ì†Œë“œë¥¼ í•˜ë‚˜ë§Œ ê°€ì§€ê³  ìˆëŠ” ìµëª… ê°ì²´ê°€ ìƒì„±.
+		btn.addActionListener( e-> {
+			tf.setText("í´ë¦­ë¨.");				
 		});	
-		//ÄÄÆ÷³ÍÆ® ¹èÄ¡
+		
+		/*
+		 * btn.addActionListener(new ActionListener() {
+		 * 
+		 * @Override public void actionPerformed(ActionEvent e) { tf.setText("í´ë¦­ë¨."); }
+		 * });
+		 */
+		 
+		//ì»´í¬ë„ŒíŠ¸ ë°°ì¹˜
         //tf.setBounds(50, 100, 200, 30);
         //btn.setBounds(300, 100, 80, 30);
 		this.add(tf);

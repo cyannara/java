@@ -3,22 +3,22 @@ package collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ·Î¶Ç¹øÈ£ {
+public class ë¡œë˜ë²ˆí˜¸ {
 
 	public static void main(String[] args) {
 
-		//Set °´Ã¼ »ı¼º
+		//Set ê°ì²´ ìƒì„±
 		Set<Integer> names = new HashSet<Integer>();
 		
-		//while set ÀÇ size°¡ 6º¸´Ù ÀÛÀ»¶§ ±îÁö ¹İº¹
+		//while set ì˜ sizeê°€ 6ë³´ë‹¤ ì‘ì„ë•Œ ê¹Œì§€ ë°˜ë³µ
 		
-		//³­¼ö ¸¸µé¾î¼­ set¿¡ Ãß°¡
+		//ë‚œìˆ˜ ë§Œë“¤ì–´ì„œ setì— ì¶”ê°€
 		
-		//¹İº¹¹® ³¡³»°í		
+		//ë°˜ë³µë¬¸ ëë‚´ê³ 		
 		
-		//set Ãâ·Â
+		//set ì¶œë ¥
 		
-		//Á¤·Ä  (  set -> list  -> sort   )
+		//ì •ë ¬  (  set -> list  -> sort   )
 	}
 
 }

@@ -1,27 +1,27 @@
-package ÀÔÃâ·Â;
+package ìž…ì¶œë ¥;
 
 import java.io.*;
 
 import javautil.Emp;
 
 /**
- * °´Ã¼(ÀÎ½ºÅÏ½º) ¸¦ ÅëÂ°·Î ÀúÀåÇÏ°í ÀÐ±â 
+ * ê°ì²´(ì¸ìŠ¤í„´ìŠ¤) ë¥¼ í†µì§¸ë¡œ ì €ìž¥í•˜ê³  ì½ê¸° 
  */
 public class ObjectFilterTest {
 
 	public static void main(String[] args) throws Exception {
-/*		//ÀúÀå
+/*		//ì €ìž¥
 		ObjectOutputStream out = 
 		new ObjectOutputStream(new FileOutputStream("d:/object.dat"));
 		
-		//Å°º¸µåÀÔ·Â
+		//í‚¤ë³´ë“œìž…ë ¥
 		
-		out.writeObject(new Emp("±æµ¿","È«",2000));
-		out.writeObject(new Emp("¼ø½Å","ÀÌ",1000));
+		out.writeObject(new Emp("ê¸¸ë™","í™",2000));
+		out.writeObject(new Emp("ìˆœì‹ ","ì´",1000));
 		
 		out.close();*/
 		
-		//ÀÐ±â
+		//ì½ê¸°
 		FileInputStream fi = new FileInputStream("d:/object.dat");
 		ObjectInputStream in = new ObjectInputStream(fi);
 		while(fi.available() > 0){		

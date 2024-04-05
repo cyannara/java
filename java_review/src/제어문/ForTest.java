@@ -1,21 +1,21 @@
-package Á¦¾î¹®;
+package ì œì–´ë¬¸;
 
 public class ForTest {
 
 	public static void main(String[] args) {
 
 		int sum = 0;
-		//10±îÁö ÇÕ°è»ê
+		//10ê¹Œì§€ í•©ê³„ì‚°
 		
 		
 		
-		//¹è¿­ÀÇ ÇÕ
+		//ë°°ì—´ì˜ í•©
 		int[] arr = {1,2,3,4,5};
 		sum = 0;
 		for( int i=0; i< arr.length ; i++) {
 			sum += arr[i];
 		}
-		System.out.println("ÇÕ°è : " + sum);
+		System.out.println("í•©ê³„ : " + sum);
 		
 		sum = 0;
 		for( int iter  : arr) {

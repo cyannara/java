@@ -1,14 +1,14 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 
 public class RobotTest {
 
 	public static void main(String[] args) {
 		
 		
-		//2. °´Ã¼»ı¼º
+		//2. ê°ì²´ìƒì„±
 		Robot r = new Robot();
 		
-		//3. °´Ã¼ »ç¿ë(ÃÊ±âÈ­)
+		//3. ê°ì²´ ì‚¬ìš©(ì´ˆê¸°í™”)
 		r.setArm(2);
 		r.leg = 4;
 		

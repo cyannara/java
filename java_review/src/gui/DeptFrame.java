@@ -1,4 +1,4 @@
-package GUI;
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -20,34 +20,34 @@ public class DeptFrame  extends JFrame implements ActionListener{
 	JButton btnSave;
 	
 	public DeptFrame() {
-		init();  // ÄÄÆ÷³ÍÆ® ÃÊ±âÈ­;
+		init();  // ì»´í¬ë„ŒíŠ¸ ì´ˆê¸°í™”;
 	}
 	
 	public void init() {
-		//ÇÁ·¹ÀÓ ¼Ó¼º º¯°æ
+		//í”„ë ˆì„ ì†ì„± ë³€ê²½
 		this.setBounds(100, 100, 250, 150);
 		
-		//ÄÄÆ÷³ÍÆ® »ı¼º
+		//ì»´í¬ë„ŒíŠ¸ ìƒì„±
 		txtDepartmentId = new JTextField();
 		txtDepartmentName = new JTextField();
-		btnSave = new JButton("ÀúÀå");
-		btnSave.addActionListener(this);  //¹öÆ°¿¡ ÇÚµé·¯ ¿¬°á
-		//ÆĞ³Î¿¡ ÄÄÆ÷³ÍÆ® Ãß°¡
+		btnSave = new JButton("ì €ì¥");
+		btnSave.addActionListener(this);  //ë²„íŠ¼ì— í•¸ë“¤ëŸ¬ ì—°ê²°
+		//íŒ¨ë„ì— ì»´í¬ë„ŒíŠ¸ ì¶”ê°€
 		JPanel panel = new JPanel();
 		panel.setLayout(new GridLayout(2, 2));
 		
-		panel.add(new JLabel("ºÎ¼­¹øÈ£"));
+		panel.add(new JLabel("ë¶€ì„œë²ˆí˜¸"));
 		panel.add(txtDepartmentId);
 		
-		panel.add(new JLabel("ºÎ¼­¸í"));
+		panel.add(new JLabel("ë¶€ì„œëª…"));
 		panel.add(txtDepartmentName);
 		
-		//ÇÁ·¹ÀÓ¿¡ ÆĞ³Î°ú ÀúÀå ¹öÆ° Ãß°¡
+		//í”„ë ˆì„ì— íŒ¨ë„ê³¼ ì €ì¥ ë²„íŠ¼ ì¶”ê°€
 		this.add(panel, BorderLayout.CENTER);
 		this.add(btnSave,BorderLayout.SOUTH );	
 	}
 
-	//¹öÆ° ÀÌº¥Æ® ÇÚµé·¯
+	//ë²„íŠ¼ ì´ë²¤íŠ¸ í•¸ë“¤ëŸ¬
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		DeptDAO dao = new DeptDAO();

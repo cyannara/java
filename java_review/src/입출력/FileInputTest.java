@@ -1,4 +1,4 @@
-package ÀÔÃâ·Â;
+package ì…ì¶œë ¥;
 
 import java.io.*;
 
@@ -12,10 +12,10 @@ public class FileInputTest {
 		byte[] buf = new byte[1024];
 		
 		while(true) {
-			int bData = in.read(buf);   // ÀĞ¾îµéÀÎ ¹ÙÀÌÆ® ±æÀÌ
+			int bData = in.read(buf);   // ì½ì–´ë“¤ì¸ ë°”ì´íŠ¸ ê¸¸ì´
 			if(bData == -1) break;
-			//System.out.print(bData);  ÄÜ¼ÖÃâ·Â
-			out.write(buf, 0, bData);   // ÆÄÀÏ·Î Ãâ·Â
+			//System.out.print(bData);  ì½˜ì†”ì¶œë ¥
+			out.write(buf, 0, bData);   // íŒŒì¼ë¡œ ì¶œë ¥
 		}
 		in.close();
 		out.close();

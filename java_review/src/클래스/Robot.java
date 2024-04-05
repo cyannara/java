@@ -1,6 +1,6 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 
-//1. Å¬·¡½º Á¤ÀÇ
+//1. í´ë˜ìŠ¤ ì •ì˜
 public class Robot {
 
 	private int arm;
@@ -13,7 +13,7 @@ public class Robot {
 		this.arm = arm;
 		this.leg = leg;
 	}
-//Á¢±ÙÁ¦¾îÀÚ(¸Ş¼­µå)
+//ì ‘ê·¼ì œì–´ì(ë©”ì„œë“œ)
 	public void setArm(int arm) {
 		this.arm = arm;
 	}

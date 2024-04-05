@@ -1,10 +1,10 @@
-package º¯¼ö;
+package ë³€ìˆ˜;
 /**
  * 
  * @author user
- * wrapper Å¬·¡½º
- * 1. °´Ã¼È­
- * 2. Å¸ÀÔº¯È¯
+ * wrapper í´ë˜ìŠ¤
+ * 1. ê°ì²´í™”
+ * 2. íƒ€ì…ë³€í™˜
  */
 public class WrapperTest {
 
@@ -26,7 +26,7 @@ public class WrapperTest {
 		double d = 10.1;
 		Double objD; 
 		
-		//5. Boxing   : ±âº»µ¥ÀÌÅÍÇü°ªÀ» °´Ã¼È­
+		//5. Boxing   : ê¸°ë³¸ë°ì´í„°í˜•ê°’ì„ ê°ì²´í™”
 		objD = d;
 		objD = new Double(d);
 		
@@ -39,9 +39,9 @@ public class WrapperTest {
 		f = objD.floatValue();
 		
 		String g = "1111";
-		System.out.println("1111 ÀÇ 10Áø¼ö °ª: " +  Integer.parseInt(g, 2));
+		System.out.println("1111 ì˜ 10ì§„ìˆ˜ ê°’: " +  Integer.parseInt(g, 2));
 		
-		g = "1F";  //16Áø¼ö
+		g = "1F";  //16ì§„ìˆ˜
 	
 	}
 

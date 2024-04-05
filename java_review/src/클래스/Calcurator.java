@@ -1,32 +1,32 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 
 /**
- * ÃÊµî ÀúÇĞ³âÀ» À§ÇÑ »çÄ¢¿¬»ê °è»ê±â
+ * ì´ˆë“± ì €í•™ë…„ì„ ìœ„í•œ ì‚¬ì¹™ì—°ì‚° ê³„ì‚°ê¸°
  * 
  * @author user
  *
  */
 public class Calcurator {
 
-	// ÇÊµå
+	// í•„ë“œ
 	protected int inNum1;
 	protected int inNum2;
 	protected int result;
 	
 	public static String name = "YEDAM";
 
-	// »ı¼ºÀÚ : public, no return, ¸Ş¼­µå¸íÀº Å¬·¡½º¸í°ú µ¿ÀÏ
-	// ÇÊµå¸¦ ÃÊ±âÈ­
+	// ìƒì„±ì : public, no return, ë©”ì„œë“œëª…ì€ í´ë˜ìŠ¤ëª…ê³¼ ë™ì¼
+	// í•„ë“œë¥¼ ì´ˆê¸°í™”
 	public Calcurator(int inNum1, int inNum2) {
 		this.inNum1 = inNum1;
 		this.inNum2 = inNum2;
 	}
 
-	// default »ı¼ºÀÚ(ÀÎ¼ö°¡ ¾ø´Â »ı¼ºÀÚ)
+	// default ìƒì„±ì(ì¸ìˆ˜ê°€ ì—†ëŠ” ìƒì„±ì)
 	public Calcurator() {
 	}
 
-	// ¸Ş¼­µå (setter/getter)
+	// ë©”ì„œë“œ (setter/getter)
 	public int getResult() {
 		return result;
 	}
@@ -39,22 +39,22 @@ public class Calcurator {
 		this.inNum2 = inNum2;
 	}
 
-	// ÀÏ¹İ ¸Ş¼­µå
-	// µ¡¼À
+	// ì¼ë°˜ ë©”ì„œë“œ
+	// ë§ì…ˆ
 	public void add() {
 		result = inNum1 + inNum2;
 	}
 
-	// »¬¼À
+	// ëº„ì…ˆ
 	public void sub() {
 		result = inNum1 - inNum2;
 	}
 
-	// °ö¼À
+	// ê³±ì…ˆ
 	public void mul() {
 		result = inNum1 * inNum2;
 	}
-	// ³ª´°¼À
+	// ë‚˜ëˆ—ì…ˆ
 	public void div() {
 		result = inNum1 / inNum2;
 	}

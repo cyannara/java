@@ -1,13 +1,13 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 /**
- * °í±Ş±â´É °è»ê±â
+ * ê³ ê¸‰ê¸°ëŠ¥ ê³„ì‚°ê¸°
  * @author user
  *
  */
 public class CalcEX extends Calcurator {
 
 	
-	//³ª¸ÓÁö¿¬»ê
+	//ë‚˜ë¨¸ì§€ì—°ì‚°
 	public void mod() {
 		result = inNum1 % inNum2;
 	}

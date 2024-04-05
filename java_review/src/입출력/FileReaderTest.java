@@ -1,28 +1,28 @@
-package ÀÔÃâ·Â;
+package ì…ì¶œë ¥;
 
 import java.io.*;
 
 /**
- * ¹®ÀÚ ½ºÆ®¸²À» ÆÄÀÏ ÀĞ°í ÀúÀåÇÏ±â 
+ * ë¬¸ì ìŠ¤íŠ¸ë¦¼ì„ íŒŒì¼ ì½ê³  ì €ì¥í•˜ê¸° 
  *
  */
 public class FileReaderTest {
 
 	public static void main(String[] args) {
 		
-		//ÆÄÀÏ ¹®ÀÚ ÀúÀå
+		//íŒŒì¼ ë¬¸ì ì €ì¥
 		try {
 			Writer fw = new FileWriter("d:/hyper.txt");
 			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write("ÀÚ¹Ù ¿¬½À");
+			bw.write("ìë°” ì—°ìŠµ");
 			bw.newLine();
-			bw.write("È«±æµ¿ ¾È³ç.");
+			bw.write("í™ê¸¸ë™ ì•ˆë…•.");
 			bw.newLine();
 			bw.close();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}		
-		//ÆÄÀÏ ¹®ÀÚ ÀĞ±â
+		//íŒŒì¼ ë¬¸ì ì½ê¸°
 		try {
 			//Reader fr = new FileReader("d:/hyper.txt");
 			BufferedReader br = new BufferedReader(new FileReader("d:/hyper.txt"));

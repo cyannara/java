@@ -1,7 +1,7 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 
 /** 
- * °è»ê±â
+ * ê³„ì‚°ê¸°
  * @author user
  *
  */
@@ -10,7 +10,7 @@ public class CalcTest {
 
 	public static void main(String[] args) {
 
-		// °´Ã¼»ı¼º
+		// ê°ì²´ìƒì„±
 /*		Calcurator c = new Calcurator();
 		c.setInNum1(10);
 		c.setInNum2(15);
@@ -20,10 +20,10 @@ public class CalcTest {
 		
 		Calcurator.name = "SAMSUNG";
 		
-		System.out.println("Á¦Á¶»ç: " + c.name );
+		System.out.println("ì œì¡°ì‚¬: " + c.name );
 		
 		Calcurator d = new Calcurator();
-		System.out.println("Á¦Á¶»ç: " + d.name );*/
+		System.out.println("ì œì¡°ì‚¬: " + d.name );*/
 		
 		//System.out.println(Calcurator.name);
 		

@@ -1,16 +1,16 @@
-package ÀÔÃâ·Â;
+package ì…ì¶œë ¥;
 
 import java.io.*;
 
 /**
- * µ¥ÀÌÅÍ Å¸ÀÔº°·Î ÀÔ·Â 
+ * ë°ì´í„° íƒ€ì…ë³„ë¡œ ì…ë ¥ 
  *
  */
 public class DataFilterTest {
 
 	public static void main(String[] args) throws IOException  {
 		
-		// ÆÄÀÏ ÀúÀå
+		// íŒŒì¼ ì €ì¥
 		OutputStream out = new FileOutputStream("d:/javatest.txt");
 		BufferedOutputStream bufFilterOut = new BufferedOutputStream(out);
 		DataOutputStream filterOut = new DataOutputStream(bufFilterOut);		
@@ -18,7 +18,7 @@ public class DataFilterTest {
 		filterOut.writeDouble(566.1456);
 		filterOut.close();		
 		
-		// ÆÄÀÏ ÀĞ±â
+		// íŒŒì¼ ì½ê¸°
 		InputStream in = new FileInputStream("d:/javatest.txt");
 		BufferedInputStream bufFilterIn = new BufferedInputStream(in);		
 		DataInputStream filterIn = new DataInputStream(bufFilterIn);
@@ -26,7 +26,7 @@ public class DataFilterTest {
 		double b = filterIn.readDouble();		
 		filterIn.close();
 		
-		// °á°ú È®ÀÎ
+		// ê²°ê³¼ í™•ì¸
 		System.out.println(a + " : " + 
 		                   b + " : "  );
 	}

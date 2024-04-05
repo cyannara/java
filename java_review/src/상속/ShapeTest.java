@@ -1,4 +1,4 @@
-package »ó¼Ó;
+package ìƒì†;
 
 public class ShapeTest {
 

@@ -1,35 +1,35 @@
-package ÀÔÃâ·Â;
+package ì…ì¶œë ¥;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
 /**
- *   ÆÄÀÏ Á¤º¸È®ÀÎ, ÆÄÀÏ»èÁ¦, ÆÄÀÏÀÌµ¿, ÆÄÀÏ¸í º¯°æ (ÆÄÀÏ=Æú´õ)
+ *   íŒŒì¼ ì •ë³´í™•ì¸, íŒŒì¼ì‚­ì œ, íŒŒì¼ì´ë™, íŒŒì¼ëª… ë³€ê²½ (íŒŒì¼=í´ë”)
  */
 public class FileTest {
 
 	public static void main(String[] args) throws IOException {
-		//1. ºó ÆÄÀÏÀ» »ı¼º
+		//1. ë¹ˆ íŒŒì¼ì„ ìƒì„±
 		//File file = new File("d:/sample.txt");
 		//file.createNewFile();
 		
-		//2. ÆÄÀÏ »èÁ¦
+		//2. íŒŒì¼ ì‚­ì œ
 		//File file = new File("d:/sample.txt");
 		//file.delete();
 		
-		//3. Æú´õ »ı¼º
+		//3. í´ë” ìƒì„±
 		//File file = new File("d:/myjava");
 		//file.mkdir();
 		
-		//4. ÆÄÀÏÁ¤º¸ È®ÀÎ
+		//4. íŒŒì¼ì •ë³´ í™•ì¸
 		/*File file = new File("d:/javatext.txt");
-		System.out.println("ÆÄÀÏ°æ·Î¸í: " + file.getAbsolutePath());
-		System.out.println("ÆÄÀÏ¸í: " + file.getName());
-		System.out.println("ÆÄÀÏÅ©±â: " + file.length());
-		System.out.println("»ı¼º½Ã°£: " + new Date(file.lastModified()) );*/
+		System.out.println("íŒŒì¼ê²½ë¡œëª…: " + file.getAbsolutePath());
+		System.out.println("íŒŒì¼ëª…: " + file.getName());
+		System.out.println("íŒŒì¼í¬ê¸°: " + file.length());
+		System.out.println("ìƒì„±ì‹œê°„: " + new Date(file.lastModified()) );*/
 		
-		//5. Æú´õ¸ñ·Ï
+		//5. í´ë”ëª©ë¡
 		File file = new File("D:\\eclipse");
 		
 		String[] list =  file.list();

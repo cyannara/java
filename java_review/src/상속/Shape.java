@@ -1,8 +1,8 @@
-package »ó¼Ó;
+package ìƒì†;
 /**
- * (Shape) µµÇü   ->  Rect(»ç°¢Çü),  
- *                  Tri(»ï°¢Çü),  
- *                  Circle(¿ø)
+ * (Shape) ï¿½ï¿½ï¿½ï¿½   ->  Rect(ï¿½ç°¢ï¿½ï¿½),  
+ *                  Tri(ï¿½ï°¢ï¿½ï¿½),  
+ *                  Circle(ï¿½ï¿½)
  */
 public abstract class Shape {
 	protected int w;
@@ -17,7 +17,7 @@ public abstract class Shape {
 	}
 	
 	public void print() {
-		System.out.println("¸éÀû : " +  result);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : " +  result);
 	}
 	
 	public abstract void area();

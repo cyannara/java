@@ -1,4 +1,4 @@
-package ÀÔÃâ·Â;
+package ìž…ì¶œë ¥;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -11,28 +11,28 @@ import java.util.Scanner;
 import javautil.Emp;
 
 /**
- * »ç¿øÁ¤º¸¸¦ ÄÜ¼Ö·Î ÀÔ·Â¹Þ¾Æ¼­ Object ÇüÅÂ·Î ÆÄÀÏ¿¡ ÀúÀå
+ * ì‚¬ì›ì •ë³´ë¥¼ ì½˜ì†”ë¡œ ìž…ë ¥ë°›ì•„ì„œ Object í˜•íƒœë¡œ íŒŒì¼ì— ì €ìž¥
  *
  */
 public class ConsoleObjectFileTest {
 
 	public static void main(String[] args) throws Exception {
 
-		// ÀÔ·Âº¯¼ö ¼±¾ð
+		// ìž…ë ¥ë³€ìˆ˜ ì„ ì–¸
 		String fname;
 		long salary;
 
-		// Scanner ÀÔ·Â
+		// Scanner ìž…ë ¥
 		Scanner scan = new Scanner(System.in);
 		fname = scan.next();
 		salary = scan.nextLong();
 
-		// Emp °´Ã¼¸¦ »ý¼ºÇØ¼­ File ¿¡ ÀúÀå ( emp.txt )
+		// Emp ê°ì²´ë¥¼ ìƒì„±í•´ì„œ File ì— ì €ìž¥ ( emp.txt )
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("d:/emp.dat"));
 		out.writeObject(new Emp(fname, null, salary));
 		out.close();
 
-		// ÀÐ±â
+		// ì½ê¸°
 		FileInputStream fi = new FileInputStream("d:/emp.dat");
 		ObjectInputStream in = new ObjectInputStream(fi);
 		while (fi.available() > 0) {

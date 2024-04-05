@@ -1,4 +1,4 @@
-package Å¬·¡½º;
+package í´ë˜ìŠ¤;
 
 public class CalcStatic {
 

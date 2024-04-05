@@ -1,11 +1,11 @@
-package GUI;
+package gui;
 /*
- * ¹èÄ¡°ü¸®ÀÚ 
+ * ë°°ì¹˜ê´€ë¦¬ì 
  */
 public class LayoutTest {
 
 	public static void main(String[] args) {
-		DeptFrame frame = new DeptFrame();
+		MyFrame frame = new MyFrame();
 		frame.setVisible(true);
 	}
 }

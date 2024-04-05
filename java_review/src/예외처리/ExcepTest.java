@@ -1,4 +1,4 @@
-package ¿¹¿ÜÃ³¸®;
+package ì˜ˆì™¸ì²˜ë¦¬;
 
 import java.io.FileInputStream;
 
@@ -7,7 +7,7 @@ public class ExcepTest {
 	public static void main(String[] args) {
 		int a,b;
 		a=10;
-		b=0;  //ÀÔ·Â
+		b=0;  //ì…ë ¥
 
 		//FileInputStream f = new FileInputStream("a.txt");
 		
@@ -20,7 +20,7 @@ public class ExcepTest {
 				e.printStackTrace();
 			}
 		} catch (ArithmeticException e) {
-			System.out.println("0ÀÌ ÀÔ·Â" +e.getMessage());
+			System.out.println("0ì´ ì…ë ¥" +e.getMessage());
 		} catch (NullPointerException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
