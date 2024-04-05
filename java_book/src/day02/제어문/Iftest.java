@@ -1,4 +1,4 @@
-package co.micol.condition;
+package day02.제어문;
 
 public class Iftest {
 	public static void main(String[] args) {

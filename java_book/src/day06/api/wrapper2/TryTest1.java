@@ -1,4 +1,4 @@
-package co.yedam.app;
+package day06.api.wrapper2;
 
 import java.util.Scanner;
 

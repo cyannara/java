@@ -1,4 +1,4 @@
-package co.yedam.app.date;
+package day06.api.date;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DateTest {
+public class DateTest2 {
 
 	public static void main(String[] args) {
 		

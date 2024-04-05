@@ -1,4 +1,4 @@
-package middleTest;
+package 자바보강.middleTest;
 
 public class Book {
 	private String isbn;

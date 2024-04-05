@@ -1,4 +1,4 @@
-package co.micol.calcurator;
+package day05.calcurator;
 
 import java.util.Arrays;
 import java.util.Random;

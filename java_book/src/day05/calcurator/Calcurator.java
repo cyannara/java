@@ -1,4 +1,4 @@
-package co.micol.calcurator;
+package day05.calcurator;
 
 public class Calcurator {
 	public int m;

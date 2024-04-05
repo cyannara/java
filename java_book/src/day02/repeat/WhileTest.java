@@ -1,4 +1,4 @@
-package co.micol.reapet;
+package day02.repeat;
 
 public class WhileTest {
 

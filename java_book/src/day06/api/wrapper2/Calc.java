@@ -1,4 +1,4 @@
-package co.yedam.app;
+package day06.api.wrapper2;
 public class Calc {	
 	public static int add(int a, int b) {
 		return a+b;

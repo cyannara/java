@@ -1,4 +1,4 @@
-package co.micol.logic;
+package day03.logic;
 
 public class ForReverse {
 

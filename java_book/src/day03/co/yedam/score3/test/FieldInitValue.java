@@ -1,4 +1,4 @@
-package co.yedam.test;
+package day03.co.yedam.score3.test;
 
 import java.util.Arrays;
 

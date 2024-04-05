@@ -1,4 +1,4 @@
-package co.micol.reperence;
+package day02.reperence;
 
 public class ArraryTest {
 

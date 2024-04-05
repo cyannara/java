@@ -1,4 +1,4 @@
-package middleTest;
+package 자바보강.middleTest;
 
 import java.util.Scanner;
 

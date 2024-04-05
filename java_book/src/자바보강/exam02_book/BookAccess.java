@@ -1,4 +1,4 @@
-package exam02_book;
+package 자바보강.exam02_book;
 
 import java.util.List;
 

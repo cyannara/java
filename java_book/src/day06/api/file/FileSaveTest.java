@@ -1,4 +1,4 @@
-package co.yedam.app.file;
+package day06.api.file;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

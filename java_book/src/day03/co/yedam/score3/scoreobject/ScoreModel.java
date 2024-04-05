@@ -1,4 +1,4 @@
-package co.yedam.scoreobject;
+package day03.co.yedam.score3.scoreobject;
 
 public class ScoreModel {
 	

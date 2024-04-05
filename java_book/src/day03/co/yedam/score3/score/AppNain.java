@@ -1,4 +1,4 @@
-package co.yedam.score;
+package day03.co.yedam.score3.score;
 
 public class AppNain {
 

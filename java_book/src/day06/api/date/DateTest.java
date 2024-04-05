@@ -1,6 +1,5 @@
 package day06.api.date;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

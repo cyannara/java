@@ -1,4 +1,4 @@
-package exam04_memo;
+package 자바보강.exam04_memo;
 
 import java.util.List;
 import java.util.Scanner;

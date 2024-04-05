@@ -1,8 +1,6 @@
 package day06.api.util;
 
-import lombok.Data;
 
-@Data
 public class Emp{
 	int id;
 	String name;

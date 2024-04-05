@@ -1,4 +1,4 @@
-package co.yedam.app.file;
+package day06.api.file;
 
 public class StringUtil {
 	//파일명 추출

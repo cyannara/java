@@ -1,4 +1,4 @@
-package day04.co.yedam.emp;
+package day04.doc;
 
 import java.util.Scanner;
 

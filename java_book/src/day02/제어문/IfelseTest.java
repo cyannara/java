@@ -1,4 +1,4 @@
-package co.micol.condition;
+package day02.제어문;
 
 public class IfelseTest {
 

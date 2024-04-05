@@ -1,5 +1,6 @@
 package day06.pkg.other;
 import java.util.ArrayList;
+import java.util.Scanner;
 /* 
  * ArrayList에 데이터를 저장하고 조회하는 기능을 구현
  */
@@ -23,7 +24,7 @@ class Memo {
 }
 
 public class ListTest {
-	ArrayList list = new ArrayList();
+	ArrayList<Memo> list = new ArrayList<>();
 	Memo memo = new Memo();
 	int a = 10;
 	
@@ -56,10 +57,10 @@ public class ListTest {
 	//등록
 	public void insert() {
 		//키보드로 입력받아서 
-		Scanner scanner;
+		Scanner scanner =  new Scanner(System.in);
 		Memo memo = new Memo();
 		memo.title = scanner.next();
-		memo.content = 
+		memo.content = scanner.next();
 		list.add(memo);
 	}
 	

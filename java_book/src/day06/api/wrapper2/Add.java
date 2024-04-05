@@ -1,4 +1,4 @@
-package co.yedam.app;
+package day06.api.wrapper2;
 
 public class Add {
 	public static void main(String[] args) {

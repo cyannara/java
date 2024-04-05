@@ -1,4 +1,4 @@
-package co.yedam.score;
+package day03.co.yedam.score3.score;
 
 /* 학생수와 각 학생들의 점수를 입력받아서 최고점수, 평균점수를 구하는 프로그램 */
 

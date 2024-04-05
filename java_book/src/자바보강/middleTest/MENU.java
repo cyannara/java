@@ -1,4 +1,4 @@
-package middleTest;
+package 자바보강.middleTest;
 
 public class MENU {
 	final static int INPUT=1;
