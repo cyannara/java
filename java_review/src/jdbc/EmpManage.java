@@ -1,4 +1,4 @@
-package jdbcTest;
+package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
- * »ç¿ø Á¶È¸ (Oracle ¿¬µ¿)
+ * ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ (Oracle ï¿½ï¿½ï¿½ï¿½)
  * @author USER
  *
  */
@@ -17,26 +17,26 @@ public class EmpManage {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
-			//1. µå¶óÀÌ¹ö ·Îµù (¸Þ¸ð¸® ·Îµù)
+			//1. ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½ ï¿½Îµï¿½ (ï¿½Þ¸ï¿½ ï¿½Îµï¿½)
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
-			//2. Connection °´Ã¼ »ý¼º
+			//2. Connection ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 			String id="insa";
 			String pw="insa";
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
 			conn = DriverManager.getConnection(url, id, pw);
 			
-			//3. Statement °´Ã¼ »ý¼º
+			//3. Statement ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 			stmt = conn.createStatement();
 			
-			String dname = "È¸°è";
-			//4. query ¼öÇà
+			String dname = "È¸ï¿½ï¿½";
+			//4. query ï¿½ï¿½ï¿½ï¿½
 			String sql = " select deptno, dname, loc"
 						+ "  from dept "
 						+ " where dname = '" + dname +"'";
 			rs = stmt.executeQuery(sql);
 			
-			//5. resultSet Ã³¸®
+			//5. resultSet Ã³ï¿½ï¿½
 			if(rs.next()) {
 				System.out.println(rs.getString("deptno"));
 				System.out.println(rs.getString("dname"));
@@ -44,7 +44,7 @@ public class EmpManage {
 				System.out.println("=======");
 			}
 			
-			//6. ¿¬°á ÇØÁ¦
+			//6. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			conn.close();
 			
 		} catch(Exception e) {
