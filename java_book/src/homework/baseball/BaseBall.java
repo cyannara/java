@@ -12,7 +12,9 @@ public class BaseBall {
 		int ball = 0;
 		int i = 0;
 		int j = 0;
+		//턴횟수 변수 지정
 
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("숫자 3개를 맞추면 끝나는 게임입니다");
@@ -33,7 +35,7 @@ public class BaseBall {
 //		System.out.println(num[0] + " " + num[1] + " " + num[2]);
 
 		while (true) {
-			System.out.print("숫자 3개를 입력 하세요 : ");
+			System.out.print(turn + "회 숫자 3개를 입력 하세요 : ");
 			num1 = sc.nextInt();
 			num2 = sc.nextInt();
 			num3 = sc.nextInt();
@@ -61,6 +63,9 @@ public class BaseBall {
 			System.out.println(strike + "스트라이크, " + ball + "볼");
 			strike = 0;
 			ball = 0;
+			//턴횟수 3회이상이면 중단
+			
+			//턴횟수 증가
 		}
 
 		System.out.println("게임 끝");

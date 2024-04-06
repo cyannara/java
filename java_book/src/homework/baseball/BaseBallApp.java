@@ -25,7 +25,7 @@ public class BaseBallApp {
 			//스트라익 볼 갯수 카운트
 			strikeBallCount();
 			//스트라익이 3개면 게임종료
-			if(s == 3) {
+			if(s == 3 ) {
 				System.out.println("게임종료");
 				break;
 			}
