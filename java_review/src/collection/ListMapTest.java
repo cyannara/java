@@ -17,25 +17,25 @@ public class ListMapTest {
 				new ArrayList<Map<String,String>>( );
 		
 		
-		//Ãß°¡
+		//ì¶”ê°€
 		Map<String,String> map = new HashMap<String,String>();
-		map.put("name", "È«±æµ¿");
+		map.put("name", "í™ê¸¸ë™");
 		map.put("sal", "2000");
 		list.add(map);
 		
 		map = new HashMap<String,String>();
-		map.put("name", "±èÀ¯½Å");
+		map.put("name", "ê¹€ìœ ì‹ ");
 		map.put("sal", "1500");
 		list.add(map);
 		
 		map = new HashMap<String,String>();
-		map.put("name", "À»Áö¹®´ö");
+		map.put("name", "ì„ì§€ë¬¸ë•");
 		map.put("sal", "2500");
 		list.add(map);
 		
 		System.out.println(list);
 		
-		//±Ş¿©ÇÕ°è
+		//ê¸‰ì—¬í•©ê³„
 		int sum = 0;
 		for(int i=0; i<list.size(); i++) {
 			sum += Integer.parseInt(list.get(i).get("sal"));
@@ -44,16 +44,3 @@ public class ListMapTest {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

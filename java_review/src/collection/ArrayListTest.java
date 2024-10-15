@@ -5,51 +5,51 @@ import java.util.LinkedList;
 
 /**
  * 
- * @author ±èÀ¯¹Ì
- * ArrayList ¿¬½À(Ãß°¡/¼öÁ¤/»èÁ¦/º¯°æ/Á¶È¸/ÀüÃ¼Á¶È¸)
+ * @author ê¹€ìœ ë¯¸
+ * ArrayList ì—°ìŠµ(ì¶”ê°€/ìˆ˜ì •/ì‚­ì œ/ë³€ê²½/ì¡°íšŒ/ì „ì²´ì¡°íšŒ)
  *
  */
 public class ArrayListTest {
 	public static void main(String[] args) {
 		
-		//°´Ã¼ »ı¼º
+		//ê°ì²´ ìƒì„±
 		LinkedList<String> list = new LinkedList<String>();
 		
-		//Ãß°¡
-		list.add("¹Ù³ª³ª");
-		list.add("¹Ù³ª³ª");
-		list.add("»ç°ú");
-		list.add("¸Ş·Ğ");  //Ãß°¡
-		list.add(0,"¼ö¹Ú");//»ğÀÔ
+		//ì¶”ê°€
+		list.add("ë°”ë‚˜ë‚˜");
+		list.add("ë°”ë‚˜ë‚˜");
+		list.add("ì‚¬ê³¼");
+		list.add("ë©”ë¡ ");  //ì¶”ê°€
+		list.add(0,"ìˆ˜ë°•");//ì‚½ì…
 		
 		System.out.println(list);
 		
-		//»èÁ¦
+		//ì‚­ì œ
 /*		list.remove(0);
-		list.remove("¸Ş·Ğ");
+		list.remove("ë©”ë¡ ");
 		System.out.println(list); */
 		
-		//º¯°æ
-		list.set(0, "¸Á°í");
+		//ë³€ê²½
+		list.set(0, "ë§ê³ ");
 		System.out.println(list);
 		
-		//Á¶È¸
-		System.out.println( "Ã¹¹øÂ° °úÀÏÀº: " + list.get(0) );
+		//ì¡°íšŒ
+		System.out.println( "ì²«ë²ˆì§¸ ê³¼ì¼ì€: " + list.get(0) );
 		
-		//ÀüÃ¼Á¶È¸ - for
+		//ì „ì²´ì¡°íšŒ - for
 		for(int i=0; i< list.size() ; i++ ) {
 			System.out.println(i +" : " + list.get(i));
 		}
 		
 		
-		//ÀüÃ¼Á¶È¸ - È®Àå for
+		//ì „ì²´ì¡°íšŒ - í™•ì¥ for
 		int cnt = 0;
 		for( String temp : list ) {
 			System.out.println(cnt + " : " + temp);
 			cnt++;
 		}
 		
-		//ÀüÃ¼Á¶È¸ iterator(¹İº¹ÀÚ)
+		//ì „ì²´ì¡°íšŒ iterator(ë°˜ë³µì)
 		Iterator<String> iter = list.iterator();
 		while(iter.hasNext()) {
 			System.out.println( iter.next() );
@@ -57,12 +57,3 @@ public class ArrayListTest {
 		
 	}
 }
-
-
-
-
-
-
-
-
-

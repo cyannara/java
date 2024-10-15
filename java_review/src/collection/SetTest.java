@@ -7,29 +7,29 @@ import java.util.Set;
 /**
  * 
  * @author USER
- * Set ¿¬½À : Ãß°¡/»èÁ¦/Á¶È¸
- * Áßº¹°ªÇã¿ë ¾ÈÇÔ / ÁýÇÕ ±¸Á¶
+ * Set ì—°ìŠµ : ì¶”ê°€/ì‚­ì œ/ì¡°íšŒ
+ * ì¤‘ë³µê°’í—ˆìš© ì•ˆí•¨ / ì§‘í•© êµ¬ì¡°
  */
 public class SetTest {
 
 	public static void main(String[] args) {
 		Set<String> names = new HashSet<String>();
 		
-		//Ãß°¡
-		names.add("¹Ù³ª³ª");
-		names.add("¹Ù³ª³ª");
-		names.add("»ç°ú");
+		//ì¶”ê°€
+		names.add("ë°”ë‚˜ë‚˜");
+		names.add("ë°”ë‚˜ë‚˜");
+		names.add("ì‚¬ê³¼");
 		
 		System.out.println(names);
 		
-		//ÀüÃ¼Á¶È¸
+		//ì „ì²´ì¡°íšŒ
 		Iterator<String> iter = names.iterator();
 		while(iter.hasNext()) {
 			System.out.println( iter.next() );
 		}
 		
-		//»èÁ¦
-		names.remove("»ç°ú");
+		//ì‚­ì œ
+		names.remove("ì‚¬ê³¼");
 		System.out.println(names);
 	
 		
@@ -37,16 +37,4 @@ public class SetTest {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

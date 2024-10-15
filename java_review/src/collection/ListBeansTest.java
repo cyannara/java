@@ -105,12 +105,12 @@ public class ListBeansTest {
 		list.add(new EmpBeans("101", "kim", "2500"));
 		list.add(new EmpBeans("102", "choi", "1000"));
 		
-		//ÀÌ¸§¸¸ Ãâ·Â - for
+		//ì´ë¦„ë§Œ ì¶œë ¥ - for
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i).getEname() );
 		}
 		
-		//ÀüÃ¼±Ş¿©ÇÕ°è
+		//ì „ì²´ê¸‰ì—¬í•©ê³„
 		int sum = 0;
 		for(int i=0; i<list.size(); i++) {
 			sum += Integer.parseInt( list.get(i).getSal() )  ;
@@ -121,13 +121,3 @@ public class ListBeansTest {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-

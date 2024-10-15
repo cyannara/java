@@ -7,32 +7,32 @@ import java.util.Set;
 /**
  * 
  * @author USER
- * Map ¿¬½À(Ãß°¡/¼öÁ¤/»èÁ¦/º¯°æ/Á¶È¸/ÀüÃ¼Á¶È¸)
- * Á¶È¸ ¸ñÀû / key ¿Í value ½ÖÀ¸·Î ±¸¼º
+ * Map ì—°ìŠµ(ì¶”ê°€/ìˆ˜ì •/ì‚­ì œ/ë³€ê²½/ì¡°íšŒ/ì „ì²´ì¡°íšŒ)
+ * ì¡°íšŒ ëª©ì  / key ì™€ value ìŒìœ¼ë¡œ êµ¬ì„±
  */
 public class MapTest {
 	public static void main(String[] args) {
 		HashMap<String, String> map = new HashMap<String, String>();
-		//Ãß°¡
-		map.put("101", "È«±æµ¿");
-		map.put("102", "À»Áö¹®´ö");
-		map.put("103", "±èÀ¯½Å");
+		//ì¶”ê°€
+		map.put("101", "í™ê¸¸ë™");
+		map.put("102", "ì„ì§€ë¬¸ë•");
+		map.put("103", "ê¹€ìœ ì‹ ");
 		
 		System.out.println(map);
 		
-		//»èÁ¦
+		//ì‚­ì œ
 		map.remove("101");
 		System.out.println(map);
 		
-		//º¯°æ
-		map.put("102", "ÀÌ¼ø½Å");  
+		//ë³€ê²½
+		map.put("102", "ì´ìˆœì‹ ");  
 		System.out.println(map);
 		
-		//Á¶È¸
-		System.out.println("103¹ø :" + map.get("103"));
+		//ì¡°íšŒ
+		System.out.println("103ë²ˆ :" + map.get("103"));
 		
-		//ÀüÃ¼Á¶È¸
-		Set<String> keys = map.keySet();  //Å° ÀüÃ¼¸¦ ¸ñ·Ï
+		//ì „ì²´ì¡°íšŒ
+		Set<String> keys = map.keySet();  //í‚¤ ì „ì²´ë¥¼ ëª©ë¡
 		Iterator<String> iter = keys.iterator();
 		while(iter.hasNext()) {
 			String key = iter.next();
@@ -41,15 +41,3 @@ public class MapTest {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

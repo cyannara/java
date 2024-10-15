@@ -1,4 +1,4 @@
-package 제어문;
+package homework;
 
 public class ForTest {
 
