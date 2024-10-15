@@ -1,14 +1,18 @@
 package day05.클래스;
 
+import day05.클래스.CalcEX;
+
 /** 
+ * 계산기
  * @author user
+ *
  */
 
 public class CalcTest {
 
 	public static void main(String[] args) {
 
-		// ��ü����
+		// 객체생성
 /*		Calcurator c = new Calcurator();
 		c.setInNum1(10);
 		c.setInNum2(15);
@@ -18,10 +22,10 @@ public class CalcTest {
 		
 		Calcurator.name = "SAMSUNG";
 		
-		System.out.println("������: " + c.name );
+		System.out.println("제조사: " + c.name );
 		
 		Calcurator d = new Calcurator();
-		System.out.println("������: " + d.name );*/
+		System.out.println("제조사: " + d.name );*/
 		
 		//System.out.println(Calcurator.name);
 		

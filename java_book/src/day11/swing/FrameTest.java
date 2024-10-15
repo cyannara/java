@@ -1,35 +1,52 @@
 package day11.swing;
 
-import java.awt.*; 
-import javax.swing.*;
-import java.awt.event.*;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FrameTest implements ActionListener{
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
+import dept.DeptDAO;
+import dept.DeptVO;
+
+
+public class FrameTest extends JFrame {
+
+	private JButton btn;
+	private JTextField txt;
+	private JTextField txtName;
+	
+	public FrameTest() {
+		btn = new JButton("클릭");
+		
+		ActionListener action = (e) -> { 
+			DeptDAO dao = new DeptDAO();
+			DeptVO vo = new DeptVO();
+			vo.setDepartment_id(txt.getText());
+			vo.setDepartment_name(txtName.getText());
+			dao.deptInsert(vo);
+			JOptionPane.showMessageDialog(null, "저장완료.");			
+		};
+	
+		btn.addActionListener(action);
+		this.getContentPane().add(btn);
+		
+		txt = new JTextField(10);
+		this.getContentPane().add(txt);
+		
+		txtName = new JTextField(10);
+		this.getContentPane().add(txtName);
+		
+		this.setLayout(new FlowLayout());
+	}
 	
 	public static void main(String[] args) {
-		//프레임(창)
-		JFrame frame = new JFrame("테스트");
-		frame.setSize(300, 400);
-		
-		//컴포넌트 생성
-		JTextField tf1 = new JTextField();
-		JButton btn1 = new JButton("눌러줘!!");
-		
-		//이벤트 지정
-		btn1.addActionListener(new FrameTest());
-		//패널 레이아웃 변경
-		frame.setLayout(new GridLayout(2,6));
-		//컴포넌트 추가
-		frame.getContentPane().add(new Label("emp_id")); frame.getContentPane().add(tf1);
-		frame.getContentPane().add(btn1);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		FrameTest frame  = new FrameTest();
+		frame.setTitle("프레임테스트");
+		frame.setSize(300, 300);
 		frame.setVisible(true);
 	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		System.out.println("클릭됨");		
-	}
-
 }
