@@ -1,4 +1,4 @@
-package homework.제어문;
+package homework.part02제어문;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,7 +18,7 @@ public class EmpMng {
 	
 	public void input() throws Exception {
 		Scanner sc;
-		URI uri = EmpMng.class.getResource("/homework/제어문/data.txt").toURI();  //상대경로
+		URI uri = EmpMng.class.getResource("/resources/emp.txt").toURI();  //상대경로
 		File file = new File(uri);
 		sc = new Scanner(file);
 		//sc.useDelimiter(",");

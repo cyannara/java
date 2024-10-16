@@ -1,6 +1,6 @@
-package day02.repeat;
+package day02.제어문;
 
-public class DoubleFor {
+public class ForDouble {
 	public static void main(String[] args) {
 		//TODO double for
 		for(int i = 2; i <= 9; i++) {

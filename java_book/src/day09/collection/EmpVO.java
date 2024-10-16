@@ -15,6 +15,8 @@ public class EmpVO {
 		this.salary = salary;
 	}
 
+	public EmpVO() {	}
+	
 	public EmpVO(String employee_id, String first_name, String last_name, int salary) {
 		super();
 		this.employee_id = employee_id;

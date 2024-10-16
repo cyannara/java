@@ -1,4 +1,4 @@
-package day02.reperence;
+package day02.참조변수;
 
 public class ArraryTest {
 

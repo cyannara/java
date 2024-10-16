@@ -1,33 +1,20 @@
 package day02.제어문;
 /*
- * 1���� 10���� Ȧ���� ���
+   Program : for test
+   2021.03.15
+   Micol Cho
  */
 public class ForTest {
-	public static void main(String[] args) {
-		
-		//���� ����
-		
-		int i=0;
-		//���� for : �ʱ��, ���ǽ�, ������
-	/*	for (i = 1; i < 10; i+=2) {
-			System.out.println(i);
-		}*/
-		
-		// �ѹ��� �������
-	/*	for(;i<0;) {
-			System.out.println(i);
-		}*/
-		
-		// ���ѷ���
-		/*for(;;) {
-			System.out.println(i);
-		}*/
-		
-		// 3�� ����� ��¾���
-		for (i = 1; i < 10; i+=2) {
-			if(i % 3 == 0 ) continue;
-			if( i == 5) break;
-			System.out.println(i);
+
+	public static void main(String[] args) {  //main method()
+		// TODO For Test
+		int sum = 0;
+		for(int i = 1;i <= 100; i++) {  //반복 구문
+			sum = sum + i;   //누적연산 방법
+			System.out.print(i + " ");
 		}
+		
+		System.out.println("누적 합 = " + sum);
 	}
+
 }

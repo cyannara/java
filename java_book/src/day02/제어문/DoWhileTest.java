@@ -1,4 +1,4 @@
-package day02.repeat;
+package day02.제어문;
 
 public class DoWhileTest {
 

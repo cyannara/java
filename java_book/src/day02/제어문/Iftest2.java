@@ -1,6 +1,6 @@
 package day02.제어문;
 
-public class Simpleif {
+public class Iftest2 {
 
 	public static void main(String[] args) {
 		// TODO 단순 if 구문   if(){  };

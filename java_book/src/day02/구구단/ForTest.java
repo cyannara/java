@@ -1,4 +1,4 @@
-package day02.성적처리;
+package day02.구구단;
 
 public class ForTest {
 

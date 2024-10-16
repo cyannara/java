@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Menu {   //캡슐화 된 Class
 	private Scanner sc;
 	private Car car;
-	private ForTest forTest;
+	private ForTest2 forTest;
 	
 	public void run() {
 		sc = new Scanner(System.in);
 		car = new Car();
-		forTest = new ForTest();
+		forTest = new ForTest2();
 		
 		int choise;
 		do {

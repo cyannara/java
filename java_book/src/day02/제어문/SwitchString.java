@@ -1,6 +1,6 @@
 package day02.제어문;
 
-public class StringSwitch {
+public class SwitchString {
 
 	public static void main(String[] args) {
 		// TODO 문자열 case문

@@ -1,6 +1,6 @@
-package day02.성적처리;
+package day02.제어문;
 
-public class SwitchTest {
+public class SwitchTest2 {
 	public static void main(String[] args) {
 
 		float avg = 85.5f;

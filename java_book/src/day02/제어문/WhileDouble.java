@@ -1,6 +1,6 @@
-package day02.repeat;
+package day02.제어문;
 
-public class DoubleWhile {
+public class WhileDouble {
 
 	public static void main(String[] args) {
 		// TODO double while
