@@ -1,4 +1,4 @@
-package homework.part02제어문;
+package homework.part02.제어문;
 
 public class ForTest {
 

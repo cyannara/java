@@ -1,4 +1,4 @@
-package homework.baseball;
+package homework.part02.baseball;
 
 public class AppMain {
 
