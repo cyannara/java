@@ -1,4 +1,4 @@
-package day01.클래스;
+package day05.클래스3;
 
 class DataBean {
 	boolean b;

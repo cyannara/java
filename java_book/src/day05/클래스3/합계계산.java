@@ -1,4 +1,4 @@
-package day01.클래스;
+package day05.클래스3;
 
 public class 합계계산 {
 	void sum(int a, int b) {
