@@ -1,4 +1,4 @@
-package day01.c03연산자;
+package day01.클래스;
 
 public class AppMain {
 

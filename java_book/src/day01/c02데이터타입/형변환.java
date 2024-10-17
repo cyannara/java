@@ -1,4 +1,4 @@
-package day01.c03연산자;
+package day01.c02데이터타입;
 
 import java.util.Scanner;
 
@@ -7,20 +7,21 @@ import java.util.Scanner;
  * 정수형 : byte < short < int   < long
  * 실수형 :                float < double
  * 
- * 스트링   ---->  byte     Byte.parseByte(변수)     
- *                short    Short.parseShort 
- *                int      Integer.parseInt
+ * 스트링   ---->  byte      Byte.parseByte(문자열)     
+ *                short     Short.parseShort(문자열)
+ *                int       Integer.parseInt(문자열)
  *                long
  *                float
  *                double
  *                char
- *                boolean
+ *                boolean   Boolean.parseBoolean(문자열)
  *         <----  
  * String.valueOf(   )       
  */
 public class 형변환 {
 
 	public static void main(String[] args) {
+		
 		//자동형변환
 		int a = 10;
 		long b = a;
@@ -47,8 +48,13 @@ public class 형변환 {
 		System.out.println(5 + 10 + "hi");
 		
 		//정수 끼리의 연산결과는 정수
-		double  i =  5 / (double)2;
-		System.out.println(i);
+		double  d1 =  10 / 3;          //자동 형 변환
+		System.out.println(d1);
+		
+		double  d2 =  10 / (double)3;  //강제 type 변환
+		System.out.println(d2);
+		//소수점 둘째자리까지 표현
+		System.out.println( (int)(d2*100)/100.0); 
 		
 		//스트링  -> int
 		String s1 = "123";
@@ -57,11 +63,6 @@ public class 형변환 {
 		//int  -> 스트링
 		String s2 = String.valueOf(10.5); 
 		
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("입력:");
-		String greet = scanner.next();
-		
-		System.out.println(greet);
 		
 	}
 
