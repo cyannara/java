@@ -1,4 +1,4 @@
-package day01.입출력2;
+package day01.입출력;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
