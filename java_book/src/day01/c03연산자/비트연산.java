@@ -1,4 +1,4 @@
-package day01.연산자;
+package day01.c03연산자;
 
 /*
  * ^ : xor - 서로 다르면 1  (암호화)

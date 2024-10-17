@@ -1,4 +1,4 @@
-package day01.시작하기;
+package day01.c01시작하기;
 
 /*
  작성자 : 김유미

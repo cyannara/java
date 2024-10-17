@@ -1,4 +1,4 @@
-package day01.데이터타입;
+package day01.c02데이터타입;
 /**
  * date : 2023/10/16 
  * @author kim yoomi
@@ -16,21 +16,26 @@ package day01.데이터타입;
  *               0xfff (16진수 0x 시작)
  *                
  *    실수형 상수 
- *               10.0 (double) 
+ *               10.0  (double) 
  *               10.0F (float)  
  *                            
  * 2. 정수형 최대값(표현범위)
  *    실수형 유효자릿수 
  *    오버플로우
  * 
- * 3. 숫자형 데이터타입          
+ * 3. 숫자 데이터형 :  boolean
+ *                  char
+ *                  byte, short, int, long
+ *                  float, double    
+ * 
+ * 4. 메모리크기          
  * 
  *                정수형상수               실수형상수
  *                   200   200L   10.5F   10.5
  *   1        2       4      8             
- * byte  >  short >  int  > long     4       8        정수
- *                               > float > double     실수
- *                                 
+ * byte  >  short >  int  > long     4       8        정수형
+ *                               > float > double     실수형
+ *          char                                      문자형                                
  */
 public class 숫자타입 {
 	public static void main(String[] args) {
@@ -58,10 +63,11 @@ public class 숫자타입 {
 		
 		//진수표현 :  2진수:0b   8진수:0  16진수:0x
 		//0으로 시작하면 8진수
-		int  b = 077;            	
-		System.out.println("8진수 77 = " + b);
+		int  b8 = 0111;            	
+		System.out.println("8진수 111=" + b8);
+		System.out.println(b8 + " " + Integer.toOctalString(b8));
 		
-		int b8 = 07 + 02;
+		b8 = 07 + 02;
 		//10진수를 8진수로 변환
 		System.out.println("07 + 02 = " + Integer.toOctalString(b8)); 		
 		

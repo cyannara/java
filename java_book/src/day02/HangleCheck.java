@@ -1,4 +1,4 @@
-package day01.데이터타입;
+package day02;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ public class HangleCheck {
 
 	public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new FileReader("./src/데이터타입/data.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("./src/day02/data.txt"));
 		while (true) {
 			String line = br.readLine();
 			if (line == null)
@@ -27,7 +27,7 @@ public class HangleCheck {
 				break;
 			}
 		}
-		System.out.println(result + "\t" + str);
+		System.out.println(str + "\t" + result);
 
 	}
 }

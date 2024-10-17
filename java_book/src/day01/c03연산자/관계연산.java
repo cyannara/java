@@ -1,4 +1,4 @@
-package day01.연산자;
+package day01.c03연산자;
 
 public class 관계연산 {
 

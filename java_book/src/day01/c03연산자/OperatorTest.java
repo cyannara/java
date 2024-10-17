@@ -1,4 +1,4 @@
-package day01.연산자;
+package day01.c03연산자;
 /*
  * 연산자 테스트
  * 논리 : and(&&)  or(||)  not(!)

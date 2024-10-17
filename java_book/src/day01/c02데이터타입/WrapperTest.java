@@ -1,4 +1,4 @@
-package day01.데이터타입;
+package day01.c02데이터타입;
 /**
  * 
  * @author user
@@ -28,7 +28,6 @@ public class WrapperTest {
 		
 		//5. Boxing   : 기본데이터형값을 객체화
 		objD = d;
-		objD = new Double(d);
 		
 		//6. Unboxing 
 		d = objD;
