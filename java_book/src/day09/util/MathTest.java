@@ -1,4 +1,4 @@
-package javautil;
+package day09.util;
 
 import java.util.Random;
 

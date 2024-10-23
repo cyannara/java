@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import day09.generic.sample02.Student;
+
 
 public class WildCardExample {
 	public static void main(String[] args) {

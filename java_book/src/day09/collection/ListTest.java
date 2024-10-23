@@ -1,5 +1,6 @@
 package day09.collection;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -52,5 +53,15 @@ public class ListTest {
 			temp = iter.next();
 			System.out.println( temp );
 		}
+		
+		//4. 정렬
+		Collections.sort(list);
+		System.out.println("sort=============");
+		System.out.println(list);
+		
+		//5. 섞기
+		Collections.shuffle(list);
+		System.out.println("shuffle=============");
+		System.out.println(list);
 	}
 }

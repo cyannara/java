@@ -1,4 +1,4 @@
-package day09.collection;
+package day09.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,6 +16,8 @@ public class SortString {
 		
 		//정렬
 		Collections.sort(list);
+		
+		//전체출력
 		for(String temp : list) {
 			System.out.println(temp);
 		}

@@ -10,9 +10,9 @@ import java.util.Iterator;
 public class ListEmpTest {
 	public static void main(String[] args) {
 		ArrayList<Employees> list = new ArrayList<Employees>();
-		list.add(new Employees("100","길동","홍","2000"));
-		list.add(new Employees("101","유신","김","2500"));
-		list.add(0, new Employees("102","문덕","을지","3000"));
+		list.add(new Employees("100","길동","홍",2000));
+		list.add(new Employees("101","유신","김",2500));
+		list.add(0, new Employees("102","문덕","을지",3000));
 		
 		//일반for 전체조회 (salary) ->  급여합계
 		Employees emp = null;
@@ -20,7 +20,7 @@ public class ListEmpTest {
 		for(int i=0; i<list.size(); i++) {
 			emp = list.get(i);
 			System.out.println(emp.getSalary());
-			sum += Integer.parseInt(emp.getSalary());
+			sum += emp.getSalary();
 		}
 		System.out.println("합계= " + sum );
 		

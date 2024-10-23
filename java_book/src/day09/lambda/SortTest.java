@@ -2,19 +2,19 @@ package day09.lambda;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
-import day09.util.Emp;
+import day09.collection.Employees;
+
 
 public class SortTest {
 	public static void main(String[] args) {
-		ArrayList<Emp> emplist = new ArrayList<>();
-		emplist.add(new Emp(1,"홍길동","인사"));
-		emplist.add(new Emp(2,"김기자","기획"));
-		emplist.add(new Emp(3,"김유신","회계"));
+		ArrayList<Employees> emplist = new ArrayList<>();
+		emplist.add(new Employees("1","홍길동","인사"));
+		emplist.add(new Employees("2","김기자","기획"));
+		emplist.add(new Employees("3","김유신","회계"));
 		
-		Collections.sort(emplist, (Emp o1, Emp o2) -> 
-				 o1.getDept().compareTo(o2.getDept())
+		Collections.sort(emplist, (Employees o1, Employees o2) -> 
+				 o1.getDepartment_id().compareTo(o2.getDepartment_id())
 			);
 		System.out.println(emplist);
 	}

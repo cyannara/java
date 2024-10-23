@@ -13,6 +13,7 @@ public class ListMapTest {
 	public static void main(String[] args) {
 		
 		ArrayList<Map<String,Object>> list = new ArrayList<Map<String,Object>>();
+		
 		Map<String,Object> map = new HashMap<String,Object>();
 		map.put("first_name", "길동");
 		map.put("last_name", "홍");

@@ -10,14 +10,21 @@ public class Employees implements Comparable<Employees>{
 	private String phone_number;
 	private String hire_date;
 	private String job_id;
-	private String salary;
+	private int salary;
 	private String commission_pct;
 	private String manager_id;
 	private String department_id;
 	
 	public Employees() {}
 	
-	public Employees(String employee_id, String first_name, String last_name, String salary) {
+	public Employees(String employee_id, String first_name, String department_id) {
+		super();
+		this.employee_id = employee_id;
+		this.first_name = first_name;
+		this.department_id = department_id;
+	}
+	
+	public Employees(String employee_id, String first_name, String last_name, int salary) {
 		super();
 		this.employee_id = employee_id;
 		this.first_name = first_name;
@@ -79,10 +86,10 @@ public class Employees implements Comparable<Employees>{
 	public void setJob_id(String job_id) {
 		this.job_id = job_id;
 	}
-	public String getSalary() {
+	public int getSalary() {
 		return salary;
 	}
-	public void setSalary(String salary) {
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 	public String getCommission_pct() {

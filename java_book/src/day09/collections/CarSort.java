@@ -1,23 +1,28 @@
-package day09.collection;
+package day09.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /* 
- * Comparable 인터페이스 
+ * Comparable 인터페이스 상속
  */
 class Car implements Comparable<Car> {
+	
 	private String band;
 	private int disp;
+	
 	public Car() {}
+	
 	public Car(int disp) {
 		this.disp = disp;
 	}	
+	
 	public Car(int disp,String band) {
 		this.band = band;
 		this.disp = disp;
 	}
+	
 	public String toString() {
 		return "Car [disp=" + disp + "]";
 	}
@@ -28,7 +33,7 @@ class Car implements Comparable<Car> {
 	}	
 }
 
-public class SortCar {
+public class CarSort {
 	public static void main(String[] args) {
 		List<Car> list =  new ArrayList<Car>();
 		list.add(new Car(1000,"삼성"));

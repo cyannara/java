@@ -1,4 +1,4 @@
-package javautil;
+package day09.util;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -7,10 +7,10 @@ import java.util.regex.MatchResult;
 public class StringTokenTest {
 	public static void main(String[] args) {
 		
-		String hobby = "ÀÚ¹Ù,JSP.SPRING";
+		String hobby = "ï¿½Ú¹ï¿½,JSP.SPRING";
 		StringTokenizer st = new StringTokenizer(hobby,",");
 		
-		System.out.println("ÅäÅ«¼ö : " + st.countTokens());
+		System.out.println("ï¿½ï¿½Å«ï¿½ï¿½ : " + st.countTokens());
 		
 		while(st.hasMoreTokens()) {
 			System.out.println( st.nextToken() );

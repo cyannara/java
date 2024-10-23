@@ -14,7 +14,12 @@ public class ListExam1 {
 		list.add("100");
 		list.add("50");
 		list.add("10");
-		//합계계산 출력 
+	
+		//전체출력
 		
+		//합계계산 출력 
+		for(String f : list ) {
+			System.out.println(f);
+		}
 	}
 }
