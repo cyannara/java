@@ -1,4 +1,4 @@
-package homework.part01.데이터타입;
+package answer.part01.데이터타입;
 
 /**
  * 실행결과 4300100100 이 나오도록 
@@ -7,10 +7,10 @@ package homework.part01.데이터타입;
  */
 public class MaxTest {
 	public static void main(String[] args) {
-		int lastYearSales = 2200_100_000;   //error 발생
-		int thisYearSales = 2100_000_100;
+		long lastYearSales = 2200_100_000L;
+		long thisYearSales = 2100_000_100;
 		
-		int totalSales = lastYearSales + thisYearSales;
+		long totalSales = lastYearSales + thisYearSales;
 		System.out.println(totalSales);
 	}
 }
