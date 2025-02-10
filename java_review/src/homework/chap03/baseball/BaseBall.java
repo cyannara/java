@@ -13,7 +13,7 @@ public class BaseBall {
 		int i = 0;
 		int j = 0;
 		//턴횟수 변수 지정
-
+		int turn =0;
 		
 		Scanner sc = new Scanner(System.in);
 		

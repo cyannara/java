@@ -1,4 +1,4 @@
-package lambda;
+package lambdaStream;
 /*
  * lambda with method reference
  * 

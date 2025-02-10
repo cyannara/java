@@ -1,4 +1,4 @@
-package lambda;
+package lambdaStream;
 
 public class ReviewVO {
 	String name;
