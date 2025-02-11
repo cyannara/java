@@ -86,8 +86,8 @@
 | boolean     | noneMatch()                | 주어진 조건을 모두 만족하지 않는지 확인                  |
 | object[]    | toArray()                  | 스트림의 모든 요소를 배열로 반환                         |
 | Optional<T> | reduce()                   | 스트림의 요소를 하나씩 줄여가면서 계산                   |
-| R           | collect(Collector<T,A,R> ) | 스트림의 요소를 수집                                     |
-|             |                            |                                                          |
+| R           | collect(Collector<T,A,R> ) | 스트림의 요소를 수집하여 반환                           |
+| R           | toList()                   | 스트림의 요소를 수집하여 UnmodifiableList 반환          |
 
 ### Optional
 
