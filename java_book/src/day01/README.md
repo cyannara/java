@@ -1,7 +1,7 @@
 #### [이클립스 버전](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) 
-2025-03 (4.35)
-2023-03 (4.27)
-2022-03 (4.23)  Spring Tools 4.14.1, 3.9.22
+2025-03 (4.35)  
+2023-03 (4.27)  
+2022-03 (4.23)  Spring Tools 4.14.1, 3.9.22  
 
 #### STS
 https://spring.io/tools  
