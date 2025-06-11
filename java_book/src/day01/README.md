@@ -4,10 +4,10 @@
 2022-03 (4.23)  Spring Tools 4.14.1, 3.9.22
 
 #### STS
-https://spring.io/tools
-https://github.com/spring-projects/sts4/wiki/Installation
-https://github.com/spring-projects/sts4/wiki/Previous-Versions
-https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+https://spring.io/tools  
+https://github.com/spring-projects/sts4/wiki/Installation  
+https://github.com/spring-projects/sts4/wiki/Previous-Versions  
+https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3  
 
 
 #### 이클립스에서 실행파일 생성을 위한 Runnable jar파일 생성방법  
