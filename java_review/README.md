@@ -94,7 +94,7 @@
 		int a = 5 / 2;
 		double b = 5 / 2;
 
-    short s = i;
+		short s = i;
 		double d3 = i;
 
 		System.out.println(a);
