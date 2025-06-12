@@ -1,3 +1,9 @@
+### 수업목표
+
+1. 데이터 타입별 허용범위
+2. 형변환
+3. 연산자자
+
 ### 데이터 타입
 
 ```
@@ -39,7 +45,7 @@
 
 ### 형변환
 
-허용범위 크기순  
+자동변환 허용범위 크기순  
  byte < short < int < long < float < double
 
 ```java
@@ -53,6 +59,8 @@
 		System.out.println(b);
 ```
 
+강제형변환
+
 ### 문자열 형변환
 
 ```java
@@ -64,6 +72,21 @@
 
 		str = i;
 		str = d;
+```
+
+### 연산자
+
+```java
+//암호화/복호화
+int a = 10;
+int key = 'a';
+System.out.println("원문:"+ a);
+
+int b = a ^ key;
+System.out.println("암호화:"+ b);
+
+int c = b ^ key;
+System.out.println("복호화:"+ c);
 ```
 
 ### 유니코드
