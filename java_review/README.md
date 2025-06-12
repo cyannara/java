@@ -136,3 +136,12 @@ System.out.println("복호화:"+ c);
 ### 유니코드
 
 UTF-8 텍스트 파일에서 한글은 3바이트를 차지하며, 자바의 char 데이터 타입은 2바이트를 사용하여 UTF-16 인코딩으로 문자를 저장합니다. 따라서 자바에서는 3바이트 한글을 char로 표현하기 위해서는 UTF-8을 UTF-16으로 변환해야 합니다
+```java
+		int a = '가';
+		System.out.println(a);
+		System.out.println((int)a);
+		System.out.println(Integer.toHexString(a));
+		
+		int b = 'a';
+		System.out.println((char)(b-32));
+```
