@@ -3,7 +3,7 @@ package homework.chap03.제어문;
 import java.io.File;
 import java.util.Scanner;
 
-public class EngScore {
+public class EngScoreWhile2 {
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -14,23 +14,15 @@ public class EngScore {
 		int score;
 		int total = 0;
 		
-		score = sc.nextInt();
-		total += score;
-		
-		score = sc.nextInt();
-		total += score;
-		
-		score = sc.nextInt();
-		total += score;
-		
-		score = sc.nextInt();
-		total += score;
-		
-		score = sc.nextInt();
-		total += score;
+		int i=0;
+		while( (score = sc.nextInt()) != 0 ) {
+			
+			total += score;
+			i++;
+		}
 		
 		//합계출력
-		System.out.println(total);
+		System.out.println(i +":" + total);
 	}
 	
 }

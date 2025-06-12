@@ -2,10 +2,13 @@ package work;
 
 public class 문자열형변환 {
 	public static void main(String[] args) {
-		String str = "12.56";
-		double d = str;
+		String str1 = "12.56";
+		double d = str1;
 		
-		str = "3000";
-		int i = str;
+		String str2 = "3000";
+		int i = str2;
+		
+		str = i;
+		str = d;
 	}
 }
