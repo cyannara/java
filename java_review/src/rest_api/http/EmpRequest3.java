@@ -2,10 +2,8 @@ package rest_api.http;
 
 import com.google.gson.Gson;
 
-import Emp.Emp;
-import Emp.EmpList;
-import common.MyRequest;
-import net.sf.json.JSONObject;
+import rest_api.Emp.Emp;
+import rest_api.common.MyRequest;
 
 public class EmpRequest3 {
 	public static void main(String[] args) {
@@ -18,9 +16,6 @@ public class EmpRequest3 {
 		Emp emp= gson.fromJson(response, Emp.class);
 		System.out.println(emp.getName());
 
-		//json-lib
-		JSONObject obj = JSONObject.fromObject(response);
-		Emp emp2 = (Emp) JSONObject.toBean( obj, Emp.class ); 
-		System.out.println(emp.getAddr());
+
 	}
 }

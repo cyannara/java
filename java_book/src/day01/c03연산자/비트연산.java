@@ -10,7 +10,7 @@ public class 비트연산 {
 	public static void main(String[] args) {
 		//암호화/복호화
 		int a = 10;//04474;
-		int key = 01111;
+		int key = 'a';
 		System.out.println("원문:"+ a);
 		
 		int b = a ^ key;

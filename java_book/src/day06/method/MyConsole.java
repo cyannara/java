@@ -1,4 +1,4 @@
-package 메서드;
+package day06.method;
 
 public class MyConsole {
 

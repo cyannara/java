@@ -2,9 +2,8 @@ package rest_api.http;
 
 import com.google.gson.Gson;
 
-import Emp.Emp;
-import Emp.EmpList;
-import common.MyRequest;
+import rest_api.Emp.Emp;
+import rest_api.common.MyRequest;
 
 public class EmpRequest2 {
 	public static void main(String[] args) {
