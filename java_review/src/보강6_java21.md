@@ -1,5 +1,6 @@
 ### Java16 추가기능
 #### Record
+https://digitalbourgeois.tistory.com/329  
 
 등장배경  
 - 기존의 데이터 클래스를 선언할 때 boilerplate code가 많다(equals, hashcode, toStirng, Constructor...)
