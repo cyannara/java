@@ -1,6 +1,7 @@
 .project
 *.class
 bin/
+target/
 .classpath
 .settings/
 /.metadata/
