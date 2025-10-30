@@ -18,6 +18,30 @@ public class Student {
 
 
 
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getNo() {
+		return no;
+	}
+
+
+
+	public void setNo(String no) {
+		this.no = no;
+	}
+
+
+
 	void print() {
 		System.out.println(name + ":" +no);
 	}
