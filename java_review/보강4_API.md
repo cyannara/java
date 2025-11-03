@@ -1,7 +1,7 @@
 ## JAVA API
 
 1. 문자열: String, StringBuffer
-2. 날짜: Date, Calendar, LocalDate, Calendar, Duration
+2. 날짜: Date, Calendar, LocalDate, LocalTime, Duration
 3. 자료구조: List / Set / Map
 4. 래퍼클래스 : Integer, Long ...
 5. 파일: File, Files, Path, 입출력 스트림
@@ -38,14 +38,14 @@ public class StringUtil {
 ### 날짜
 
 ```
-Date          ---->    calendar     ---->       LocalDate, LocalTime, LocalDateTime, ZonedDateTime
+Date          ---->    calendar     ---->       LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Duration
                                                 Instant
 SimpleDateFormat                                DateTimeFormatter
                                                 java 8 ↑
 java.util                                       java.time
 ```
 
-# 자바 날짜 타입 비교
+#### 자바 날짜 타입 비교
 
 | 항목             | java.util(Legacy)                                 | java.time (Java 8+)                                                                                     |
 | ---------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -60,9 +60,9 @@ java.util                                       java.time
 | 장점             | 기존 코드 호환성                                  | 직관적, 안전, 연산 용이, 명확한 타입 구분                                                               |
 | 단점             | Deprecated 많고 오류 발생 가능                    | 구버전 코드와 호환 필요 시 변환 필요                                                                    |
 
-## 예시 코드
+#### 예시 코드
 
-### Legacy 방식
+Legacy 방식  
 
 ```java
 import java.util.Date;
@@ -72,7 +72,21 @@ Date now = new Date();
 Calendar cal = Calendar.getInstance();
 cal.set(2025, Calendar.NOVEMBER, 3);
 ```
+java 8 방식
+```java
+LocalDate today = LocalDate.now();
+LocalDateTime dateTime = LocalDateTime.of(2025, 11, 3, 15, 30);
+ZonedDateTime seoulTime = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));
+```
 
+시간차이 계산  
+```java
+        LocalTime start = LocalTime.of(9, 30, 0);  // 09:30:00
+        LocalTime end = LocalTime.of(12, 45, 30);  // 12:45:30
+
+        Duration duration = Duration.between(start, end);
+        System.out.println("총 시간(hour): " + duration.toHours());
+```
 ### File VS Files/Path
 
 ```
