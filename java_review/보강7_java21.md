@@ -67,28 +67,36 @@ OCP(Open Close Principle)
     .forEach(System.out::println);     // 반복문 출력(최종연산)
 ```
 
+```java
+        // 점수 평균 구하기
+        double avg = students.stream()
+                             .mapToInt(Student::getScore) // Stream<Student> → IntStream
+                             .average()                   // 평균 계산
+                             .orElse(0);                  // 값 없을 때 0
+```
+
 #### 스트림 생성
 
 #### 스트림 중간연산 함수
 
-|              |                                |                           |
-| :----------- | :----------------------------- | :------------------------ |
-| 필터         | filter(Predicate<T> predidate) | 조건에 안맞는 요소를 제외 |
-|              | distinct()                     | 중복을 제거               |
-| 제한         | limit(long maxsize)            | 스트림의 일부를 잘라냄    |
-|              | skip(long n)                   | 스트림의 일부를 건너뜀    |
-| 정렬         | sorted()                       | 스트림의 요소를 정렬      |
-|              | sorted(Comparator<T> comp)     |                           |
-| 연산결과확인 | peek(Consumr<T> action)        | 스트림의 요소에 작업 수행 |
-| 변환         | map(Function<T,R> mapper)      | 스트림 요소를 반환        |
-|              | mapToDouble()                  |                           |
-|              | mapToInt()                     |                           |
-|              | mapToLong()                    |                           |
-|              | flatMap()                      |                           |
-|              | flatMapToDouble()              |                           |
-|              | flatMapToInt()                 |                           |
-|              | flatMapToLong()                |                           |
-|              |                                |                           |
+| 기능         | 중간연산                       | 설명                      | 리턴타입  |
+| :----------- | :----------------------------- | :------------------------ | :-------- |
+| 필터         | filter(Predicate<T> predidate) | 조건에 안맞는 요소를 제외 | Stream<T> |
+|              | distinct()                     | 중복을 제거               |           |
+| 제한         | limit(long maxsize)            | 스트림의 일부를 잘라냄    |           |
+|              | skip(long n)                   | 스트림의 일부를 건너뜀    |           |
+| 정렬         | sorted()                       | 스트림의 요소를 정렬      |           |
+|              | sorted(Comparator<T> comp)     |                           |           |
+| 연산결과확인 | peek(Consumr<T> action)        | 스트림의 요소에 작업 수행 |           |
+| 변환         | map(Function<T,R> mapper)      | 스트림 요소를 반환        |           |
+|              | mapToDouble()                  |                           |           |
+|              | mapToInt()                     |                           | IntStream |
+|              | mapToLong()                    |                           |           |
+|              | flatMap()                      |                           |           |
+|              | flatMapToDouble()              |                           |           |
+|              | flatMapToInt()                 |                           |           |
+|              | flatMapToLong()                |                           |           |
+|              |                                |                           |           |
 
 #### 스트림 최종함수
 
@@ -97,8 +105,6 @@ OCP(Open Close Principle)
 | void        | forEach()                  | 각 요소에 지정된 작업 수행                               |
 | void        | forEachOrdered()           | 병렬스트림으로 처리할 때 순서 유지                       |
 | long        | count()                    | 스트림의 요소의 개수 반환                                |
-| Optional<T> | max()                      | 스트림의 최대값을 반환                                   |
-| Optional<T> | min()                      | 스트림의 최소값을 반환                                   |
 | Optional<T> | findAny()                  | 스트림의 요소를 아무거나 하나를 반환. filter와 함께 사용 |
 | Optional<T> | findFirst()                | 스트림의 첫번째 요소를 반환                              |
 | boolean     | allMatch()                 | 주어진 조건을 모두 만족하는지 확인                       |
@@ -108,6 +114,13 @@ OCP(Open Close Principle)
 | Optional<T> | reduce()                   | 스트림의 요소를 하나씩 줄여가면서 계산                   |
 | R           | collect(Collector<T,A,R> ) | 스트림의 요소를 수집하여 반환                            |
 | R           | toList()                   | 스트림의 요소를 수집하여 UnmodifiableList 반환           |
+
+#### IntStream
+
+| 리턴타입    | 최종연산         | 설명                           |
+| :---------- | :--------------- | :----------------------------- |
+| long        | sum(), average() | 스트림의 요소의 합계/평균 반환 |
+| Optional<T> | max(), min()     | 스트림의 최대/최소값을 반환    |
 
 ### Optional
 

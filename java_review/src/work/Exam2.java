@@ -1,4 +1,4 @@
-package javaexam;
+package work;
 
 interface Drawable {
 	public void draw();
