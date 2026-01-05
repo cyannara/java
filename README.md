@@ -1,3 +1,6 @@
+### JDK 다운로드
+https://jdk.java.net/java-se-ri/11-MR3  
+
 ###자바 예제(10일)
 
 ## 1. 변수
