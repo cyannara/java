@@ -29,7 +29,84 @@ OCP(Open Close Principle)
   testList.forEach(System.out::println);
   ```
 
-### 스트림
+### 람다 표현식
+
+```
+
+JS                              java
+===================================================================
+ arr = []                       [] , ArrayList
+ std = { no:1, name:""  }       class (필드만)   StudentVO
+[                               ArrayList<Student> list = new ArrayList<Student>()
+ { no:1, name:"aa"  },
+ { no:2, name:"bb"  }
+]
+              익명함수
+arr.sort(function(a,b){ if a>b return 1 else if a<b return -1 else return 0})  ==> 익명클래스
+arr.sort((a,b)=>{ if a>b return 1 else if a<b return -1 else return 0})        ==> 람다표현식
+
+```
+
+```java
+		//1. Comparator 구현클래스 선언
+		//list.sort(new MyComp());
+
+		//2. 익명클래스 선언과 생성
+//		list.sort(new Comparator<Employee>() {
+//
+//			@Override
+//			public int compare(Employee o1, Employee o2) {
+//				return (int)(o1.getSalary() - o2.getSalary());
+//			}
+//		}  );
+		//3. 람다표현식
+		list.sort((Employee o1, Employee o2) -> o1.getFirstName().compareTo(o2.getFirstName()));
+
+		//4. 스태틱 매서드 사용
+		list.sort(Comparator.comparing((Employee e) -> e.getSalary() ));
+
+		//5. 람다표현식 축약(더블콜론 = 메서드 참조)
+		list.sort(Comparator.comparing(Employee::getSalary));
+	}
+}
+
+//1. Comparator 구현클래스 선언
+class MyComp implements Comparator<Employee> {
+	@Override
+	public int compare(Employee o1, Employee o2) {
+		return o1.getEmployeeId() - o2.getEmployeeId();
+	}
+
+```
+
+### 스트림 API
+
+#### 프로그래밍 패러다임
+
+명령형 프로그래밍 (절차지향 => 객체지향 ) ===> 선언형 프로그래밍(함수형 프로그래밍)  
+객체 지향 언어의 프레임워크 또한 부분적으로 함수형 메소드를 도입
+
+```java
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        // 짝수만 포함하는 ArrayList 생성
+        ArrayList<Integer> dataList = new ArrayList<>();
+        for(int i=0; i<data.length; i++) {
+            if(data[i] % 2 == 0) {
+                dataList.add(data[i] * data[i]);
+            }
+        }
+
+        // 1. 짝수 위치의 원소의 제곱의 합을 계산
+        int sumOfSquares = numbers.stream()
+                                  .filter(n -> n % 2 == 0)   // 1. 짝수만 필터링
+                                  .mapToInt(n -> n * n)      // 2. 각 원소를 제곱
+                                  .sum();                    // 3. 합계
+
+        System.out.println("짝수의 제곱의 합계: " + sumOfSquares);
+```
+
+#### 스트림 API란
 
 - 람다를 활용해 배열과 컬렉션을 함수형으로 간단하게 처리할 수 있는 기술
 - 스트림은 '데이터의 흐름’입니다. 배열 또는 컬렉션 인스턴스에 함수 여러 개를 조합해서 원하는 결과를 필터링하고 가공된 결과를 얻을 수 있고 또한 람다를 이용해서 코드의 양을 줄이고 간결하게 표현가능.
@@ -42,9 +119,9 @@ OCP(Open Close Principle)
 스트림 결과 생성 - 스트림 결과를 만들어 내는 작업을 한다. 1번만 가능
 
 ```java
-    String[] strArr = {"키위","포도","바나나","사과","감","사과"};
+    String[] strArr = {"키위", "포도", "바나나", "사과", "감", "사과"};
 
-    long cnt = Stream.of(strArr)  // 문자열배열이 소스인 스트림
+    long cnt = Stream.of(strArr)           // 문자열배열이 소스인 스트림
          .filter(s -> s.length()>1)        // 걸러내기(중간연산)
         .distinct()                        // 중복 제거(중간연산)
         .count();                          // 요소 개수(최종연산)
@@ -59,7 +136,7 @@ OCP(Open Close Principle)
         .collect(Collectors.toList());     // list로 변환(최종연산)
     System.out.println(list);
 
-    Stream.of(strArr)  // 문자열배열이 소스인 스트림
+    Stream.of(strArr)                 // 문자열배열이 소스인 스트림
      .filter(s -> s.length()>1)        // 걸러내기(중간연산)
     .distinct()                        // 중복 제거(중간연산)
     .sorted()                          // 정렬(중간연산)
