@@ -8,6 +8,7 @@ switch(요일번호) {
   default : 요일명="일"; 
 }
 ```
+Java 12 ↑
 ```java
 String 요일명 = switch(요일번호) {
   case 1 -> "월";
